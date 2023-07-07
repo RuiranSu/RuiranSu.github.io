@@ -8,8 +8,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Ruiran Su is currently a graduate student at Peking University">
-  <meta name="keywords" content="Ruiran Su, 苏芮冉, ruiransu, Ruiran, Su, Natural Language Processing, Data Mining, PKU, Computer, Vision">
+  <meta name="description" content="Ruiran Su is currently a DPhil student at the University of Oxford">
+  <meta name="keywords" content="Ruiran Su, Alba Su, ruiransu, Ruiran, Su, Natural Language Processing, Data Mining, PKU, Computer, Vision">
   <meta name="author" content="Ruiran Su" />
 
   <link rel="stylesheet" href="w3.css">
@@ -89,13 +89,13 @@
 
 <!-- The Home Section -->
     <div class="w3-container w3-center w3-padding-32" id="home">
-      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/6.JPG">
+      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/profile.JPG">
       <h1>Ruiran Su</h1>
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-          I am currently a graduate student in Peking University, where I major in Natural Language Processing. I did my bachelors at Beijing International Studies University with a special focus on linguistics and consecutive interpreting among English, Spanish and Chinese. So as you can see, colossal multi-disciplinary experiences hold certain inherent advantages when it comes to practical researching topics requiring a solid combination of theories and methods in AI as well as a keen insight into the human-centered philosophy behind the big data.
+          I am currently pursuing a DPhil in Engineering Science at the University of Oxford, with a specialization in Natural Language Processing (NLP). My primary research interest lies in the intersection of Graph Neural Networks and Large Language Models, specifically in devising methodologies to predict misinformation and identify potential misinformation spreaders on social media. Additionally, I am intrigued by the development of knowledge graphs tailored for advancing next-generation telecommunication systems.
         </p>
         <p class="w3-center">
-          <a href="mailto:1901210491@pku.edu.cn">Email</a> &nbsp/&nbsp
+          <a href="mailto:ruiran.su@trinity.ox.ac.uk">Email</a> &nbsp/&nbsp
 
           <a href="https://www.linkedin.com/in/alba-sue-1901210/"> Linkedin </a>
         </p>
@@ -105,63 +105,96 @@
 <!-- The News Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
    <h2>Education</h2>
-      <p><li> 2019.9-2022.6, graduate in Computer Science at School of Software and Microelectronics in Peking University.</li></p>
-      <p><li> 2021.8-2022.6, assistant researcher at Guanghua School of Management in Peking University .</li></p>
-      <p><li> 2020.9-2021.7, assistant researcher at School of Architecture in Tsinghua University .</li></p>
-      <p><li> 2015.9-2019.6, undergraduate in Translation and Interpretation of Beijing International Studies University.</li></p>
+<ul>
+    <li><strong>2022 - Present:</strong> DPhil in Engineering Science, University of Oxford.</li>
+    <li><strong>2021 - 2022:</strong> Assistant Researcher, Guanghua School of Management, Peking University.</li>
+    <li><strong>2020 - 2021:</strong> School of Architecture, Tsinghua University.</li>
+    <li><strong>2019 - 2022:</strong> BSc in Computer Science, Peking University.</li>
+</ul>
+
+      
 
 
-  </div>
 <!-- The Projects Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h2>Recent Projects</h2>
- 
-        <h4><li>Automatic scoring of secondary school subjective questions using knowledge graph</li></h4>
-        <p class="w3-justify">
-        The automatic assessment work for subjective questions in Chinese (including history, geography, politics, etc.) mainly serves the needs of small-scale teacher-assisted marking, with pre-training corpus crawled from subject textbooks, subject websites, tutorial materials, etc. In addition to this, real test paper data is indispensable, and thanks to our college's good relationships with government and business enterprises, we have attained access to some provincial and municipal Chinese examination data. The process of converting unstructured texts into structured ones, the decryption of e-books, the anti-crawl mechanism of crawler websites and OCR proofreading are all problems that must be solved. Reference answers can be obtained and parsed through entity extraction and entity relationship extraction and the construction of a knowledge graph, and candidate answers can be compared with reference answers through semantic consistency analysis and sentiment disposition analysis.
-        </p> 
+<div class="w3-container w3-padding-32" id="projects">
+  <h2>Recent Projects</h2>
 
-        <h4><li>Text analysis and sentiment analysis of China-related stories in the New York Times and Los Angeles Post, 2010-present</li></h4>
-        <p class="w3-justify">
-        In recent years, with China's economy taking off, foreign media coverage of China's economy, society and politics has been soaring. The image of China presented by the US mainstream media in their reports not only reflects to a certain extent the evaluation of China by Western public opinion, but also serves as a significant microcosm of China's international image. The three major mainstream publications in the US, namely the New York Times, the Los Angeles Post and the Washington Post, have published a total of over 30,000 China-related articles since 2010. By means of entity extraction, attribute extraction and sentiment classification, the analysis can be divided into three dimensions. To be specific, the macro framework includes the number of reports, subject distribution, subject weighting, and overall trends. The meso-framework includes the location of the article and the source of the information, etc. The micro framework includes high frequency words and key sentences, comparison of tendency words, etc.
-        </p> 
-
-        <h4><li>Smart City-Introducing automatic 5G network slicing on the Open Network Automation Platform</li></h4>
-        <img style="width:65%;" src="images/ONAP.png">
-        <p class="w3-justify">
-        Intent-based network (IBN) is a self-driving network that uses decoupling network control logic and closed-loop orchestration techniques to automate application intents. An IBN is an intelligent network, which can automatically convert, verify, deploy, configure, and optimize itself to achieve target network state according to the intent of the operators, and can automatically solve abnormal events to ensure the network reliability. End-to-end slicing provides more opportunities for telecommunications in vertical industry. It is able to satisfy the different Service Level Agreement of vertical industry. However, a smarter and more flexible slicing management framework is required to support the deep application of vertical industry in beyond 5G networks. The slicing research and standardization of 3GPP and other SDOs has started to focus on smart slicing. A significant target of smart slicing is to satisfy the users’ intents and requirements. An intent-based network can recognize the users’ intent in real-time and then update the network slicing to guarantee the SLA.
-        </p>  
-
+  <div class="project">
+    <h4>Intent-based Network Empowered by Knowledge Graph</h4>
+    <p class="w3-justify">
+      In recent years, Intent-based Networks (IBNs) have emerged as a revolutionary approach to managing and optimizing complex networks. Nevertheless, modern IBN systems often encounter difficulties in accurately interpreting user intent and translating it into network configurations. Our research introduces an Intent-based Network empowered by Knowledge Graph (IBN-KG), which ingeniously integrates knowledge graph technology with IBN, significantly improving the translation and management of user intents. The study primarily focuses on constructing a knowledge graph for grid scenarios and leveraging this graph to enhance the IBN's performance. Additionally, we present a customized Knowledge Graph construction framework, specifically designed for vertical industry applications, with a special emphasis on smart grid scenarios. This encompasses the development of a unique data layer, extraction of knowledge through natural language processing, knowledge fusion, continuous updating of knowledge, and the application of knowledge through user interfaces. Overall, the fusion of Knowledge Graph technology with IBN heralds a smarter, more adaptable, and efficient method for translating and managing user intent in network configurations, particularly in smart grid applications.
+    </p>
   </div>
+
+  <div class="project">
+    <h4>Automatic Scoring of Secondary School Subjective Questions Using Knowledge Graphs</h4>
+    <p class="w3-justify">
+      This project focuses on the automatic assessment of subjective questions in Chinese secondary schools, encompassing various subjects like history, geography, politics, etc. The primary goal is to facilitate small-scale, teacher-assisted grading by utilizing a pre-trained corpus composed of textbooks, academic websites, and supplementary materials. Additionally, actual test paper data plays a crucial role, and through collaboration with governmental bodies and enterprises, we have gained access to provincial and municipal Chinese examination data. The project involves converting unstructured text into structured formats, decrypting e-books, circumventing web crawlers’ anti-scraping mechanisms, and ensuring OCR accuracy. The construction of knowledge graphs through entity extraction and relationship analysis allows for the comparison of candidate answers with reference answers based on semantic consistency and sentiment analysis.
+    </p>
+  </div>
+
+  <div class="project">
+    <h4>Text and Sentiment Analysis of China-Related Articles in the New York Times and Los Angeles Post (2010-Present)</h4>
+    <p class="w3-justify">
+      As China's economy has surged, international media coverage concerning China's economy, society, and politics has intensified. The portrayal of China in the US mainstream media reflects not only the Western public's perception but also serves as a gauge of China’s international image. The New York Times, Los Angeles Post, and Washington Post have collectively published over 30,000 articles about China since 2010. Using entity extraction, attribute extraction, and sentiment classification, the analysis is conducted across three dimensions - macro, meso, and micro. The macro framework examines the volume, subject distribution, weightage, and overall trends. The meso framework includes article placement and information sources. The micro framework focuses on high-frequency words, key sentences, and comparison of word tendencies.
+    </p>
+  </div>
+
+  <div class="project">
+    <h4>Implementing Automatic 5G Network Slicing on the Open Network Automation Platform</h4>
+    <img style="width:65%;" src="images/ONAP.png" alt="ONAP">
+    <p class="w3-justify">
+      Intent-Based Networking (IBN) represents an evolution in networking, wherein network control logic is decoupled, and closed-loop orchestration techniques are employed to automate application intents. An IBN is adaptive and intelligent, capable of interpreting operator intents in real-time to dynamically adjust network configurations and ensure reliability. End-to-end network slicing in 5G and beyond offers immense potential for the telecommunication industry to meet diverse Service Level Agreements (SLAs) for different verticals. However, the realization of this potential requires a smarter and more flexible slicing management framework. Research and standardization bodies such as 3GPP are increasingly focusing on smart slicing, which is geared towards accommodating user intents and requirements through real-time recognition and adaptive network slicing to meet SLAs.
+    </p>
+  </div>
+
+</div>
+
   
   <!-- The Internship Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="internship">
     <h2>Internship</h2>
-      <p><li> 2020-2021  AI Technology Research Engineer, China Telecom Research Institute (12 months)</li></p>
-      <p><li> 2020-2021  Assistant Researcher, Tsinghua University (12 weeks)</li></p>
+      <p><li> 2020-2021  AI Technology Research Engineer, China Telecom Research Institute </li></p>
+      <p><li> 2020-2021  Assistant Researcher, Tsinghua University </li></p>
       <p><li> 2019       National Development and Reform Commission (part-time holiday work)</li></p>
       <p><li> 2019       The United Nations Environment Programme (part-time holiday work) </li></p>
   </div>
- <!-- The Publications Section -->
-  <div class="w3-container w3-padding-32"" id="publications">
+<!-- The Publications Section -->
+<div class="w3-container w3-padding-32" id="publications">
     <h2>Publications</h2>
-
-    <h4> Conference Papers:</h4>
-
+    <h4>Conference Papers:</h4>
     <ol>
-      
-      <p>
-      <strong>An Intent-based Smart Slicing Framework for Vertical Industry in B5G Networks</strong>
-      <br>
-      Dong Wang(Supervisor), <strong>Ruiran Su</strong>
-      <br>
-      <em>IEEE</em> 2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/document/9538888">paper</a>
-      </p>
+        <li>
+            <p>
+                <strong>An Intent-based Network Empowered by Knowledge Graph: Enhancement of Intent Translation and Management Function for Vertical Industry</strong>
+                <br>
+                Dong Wang (Supervisor), <strong>Ruiran Su</strong>
+                <br>
+                <em>IEEE CIC</em> 2023 | <a style="color: #447ec9" href="[link_to_paper]">paper</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>Trends and Challenges of Policy Verification for Intent-based Networking towards 6G</strong>
+                <br>
+                Dong Wang (Supervisor), <strong>Ruiran Su</strong>
+                <br>
+                <em>IEEE CIC</em> 2022 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9896717">paper</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>An Intent-based Smart Slicing Framework for Vertical Industry in B5G Networks</strong>
+                <br>
+                Dong Wang (Supervisor), <strong>Ruiran Su</strong>
+                <br>
+                <em>IEEE CIC</em> 2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/document/9538888">paper</a>
+            </p>
+        </li>
+    </ol>
+</div>
 
-      </ol>
 
-    </p>
-  </div>
 
 <!-- The International Conference Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="International Conference">
@@ -180,9 +213,7 @@
     <p><li> 2020, Distinguished Student of the Year 2020, Peking University</p>
     <p><li> 2019, Distinguished Student of the Year 2019, Peking University, First Prize in YLYK English-to-Chinese Translation Contest</p>
     <p><li> 2018, Selection for Ministry of Foreign Affairs, President's Undergraduate Scholarship </p>
-    <p><li> 2017, President's Undergraduate Scholarship, First Prize in BISU English-Spanish Speech Contest</p>
-    <p><li> 2016, President's Undergraduate Scholarship</p>
-    <p><li> 2015, President's Undergraduate Scholarship</p>
+
 
     <h4> Talents</h4>
     <p><li> Live singer and Ukulele performer at Hey Elephant Bar </p>
