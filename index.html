@@ -14,19 +14,51 @@
   <link rel="icon" type="image/png" href="images/icons.png">
 
   <style>
+    /* Soft Pink Color Palette */
+    :root {
+      --pink1: #FFD3D6;
+      --pink2: #FFE5E7;
+      --peach: #F9DCC0;
+      --pink3: #FFC6CA;
+      --pink4: #F9E6E4;
+      --pink5: #FFB0B5;
+    }
+    
     .w3-sidebar a {font-family: "Roboto", sans-serif}
     body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     
+    /* Sidebar styling with new colors */
+    .w3-sidebar {
+      background: linear-gradient(180deg, var(--pink5) 0%, var(--pink3) 100%) !important;
+    }
+    
+    .w3-sidebar a:hover {
+      background-color: var(--pink1) !important;
+    }
+    
+    /* Header styling */
+    .w3-bar.w3-black {
+      background: linear-gradient(90deg, var(--pink5) 0%, var(--pink3) 100%) !important;
+    }
+    
+    /* Publication items */
     .publication-item {
       margin-bottom: 15px;
-      padding: 10px;
-      border-left: 3px solid #0e6e55;
-      background-color: #f9f9f9;
+      padding: 12px;
+      border-left: 4px solid var(--pink5);
+      background: linear-gradient(to right, var(--pink4) 0%, #ffffff 50%);
+      border-radius: 4px;
+      transition: transform 0.2s;
+    }
+    
+    .publication-item:hover {
+      transform: translateX(5px);
+      box-shadow: 0 2px 8px rgba(255, 176, 181, 0.3);
     }
     
     .publication-title {
       font-weight: bold;
-      color: #0e6e55;
+      color: #d4808a;
       margin-bottom: 5px;
     }
     
@@ -42,40 +74,141 @@
       font-size: 0.9em;
     }
     
+    .publication-venue a {
+      color: #d4808a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .publication-venue a:hover {
+      color: var(--pink5);
+      text-decoration: underline;
+    }
+    
+    /* Award items */
     .award-item {
       margin-bottom: 10px;
-      padding: 8px 12px;
-      background-color: #fff8e1;
-      border-radius: 4px;
+      padding: 10px 15px;
+      background: linear-gradient(135deg, var(--pink2) 0%, var(--peach) 100%);
+      border-radius: 6px;
+      border-left: 3px solid var(--pink3);
     }
     
     .experience-item {
       margin-bottom: 20px;
     }
     
+    .experience-item h3 {
+      color: #d4808a;
+      border-bottom: 2px solid var(--pink5);
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+    
+    /* Button styling */
     .btn-link {
       display: inline-block;
-      padding: 8px 16px;
+      padding: 10px 20px;
       margin: 5px;
-      background-color: #0e6e55;
+      background: linear-gradient(135deg, var(--pink3) 0%, var(--pink5) 100%);
       color: white;
       text-decoration: none;
-      border-radius: 4px;
-      transition: background-color 0.3s;
+      border-radius: 25px;
+      transition: all 0.3s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-weight: 500;
     }
     
     .btn-link:hover {
-      background-color: #0a5243;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 176, 181, 0.4);
+      background: linear-gradient(135deg, var(--pink5) 0%, var(--pink3) 100%);
     }
     
     .highlight-text {
-      color: #0e6e55;
+      color: #d4808a;
       font-weight: bold;
     }
     
-    .section-divider {
-      margin: 30px 0;
-      border-bottom: 2px solid #a16f0b;
+    /* Section headers */
+    h2 {
+      color: #d4808a !important;
+    }
+    
+    .w3-border-bottom {
+      border-bottom: 3px solid var(--pink5) !important;
+    }
+    
+    /* Alternate section backgrounds */
+    .w3-light-grey {
+      background: linear-gradient(to bottom, #ffffff 0%, var(--pink4) 100%) !important;
+    }
+    
+    /* Links */
+    a {
+      color: #d4808a;
+      transition: color 0.3s;
+    }
+    
+    a:hover {
+      color: var(--pink5);
+    }
+    
+    /* Profile image border */
+    .profile-img {
+      border: 5px solid var(--pink5);
+      box-shadow: 0 4px 15px rgba(255, 176, 181, 0.3);
+    }
+    
+    /* Lists */
+    .w3-ul li {
+      border-left: 3px solid var(--pink2);
+      padding-left: 15px;
+      margin-bottom: 8px;
+      transition: border-color 0.3s;
+    }
+    
+    .w3-ul li:hover {
+      border-left-color: var(--pink5);
+    }
+    
+    /* Footer styling */
+    .footer-section {
+      background: linear-gradient(to right, var(--pink2) 0%, var(--peach) 50%, var(--pink2) 100%);
+      color: #555;
+    }
+    
+    .footer-section a {
+      color: #d4808a;
+      font-weight: bold;
+    }
+    
+    .footer-section a:hover {
+      color: var(--pink5);
+    }
+    
+    /* Name styling */
+    h1 {
+      background: linear-gradient(135deg, var(--pink5) 0%, #d4808a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: bold;
+    }
+    
+    /* Project boxes */
+    .project-box {
+      background: white;
+      border: 2px solid var(--pink2);
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      transition: all 0.3s;
+    }
+    
+    .project-box:hover {
+      border-color: var(--pink5);
+      box-shadow: 0 5px 15px rgba(255, 176, 181, 0.2);
     }
   </style>
 </head>
@@ -85,25 +218,25 @@
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
-    <h3><b>ALBA SU</b></h3>
+    <h3 style="color: white;"><b>ALBA SU</b></h3>
   </div>
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
-    <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <a href="#about" class="w3-bar-item w3-button">About</a>
-    <a href="#news" class="w3-bar-item w3-button">News</a>
-    <a href="#publications" class="w3-bar-item w3-button">Publications</a>
-    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-    <a href="#teaching" class="w3-bar-item w3-button">Teaching</a>
-    <a href="#experience" class="w3-bar-item w3-button">Experience</a>
-    <a href="#awards" class="w3-bar-item w3-button">Awards</a>
-    <a href="#interests" class="w3-bar-item w3-button">Personal</a>
+    <a href="#home" class="w3-bar-item w3-button" style="color: white;">Home</a>
+    <a href="#about" class="w3-bar-item w3-button" style="color: white;">About</a>
+    <a href="#news" class="w3-bar-item w3-button" style="color: white;">News</a>
+    <a href="#publications" class="w3-bar-item w3-button" style="color: white;">Publications</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="color: white;">Projects</a>
+    <a href="#teaching" class="w3-bar-item w3-button" style="color: white;">Teaching</a>
+    <a href="#experience" class="w3-bar-item w3-button" style="color: white;">Experience</a>
+    <a href="#awards" class="w3-bar-item w3-button" style="color: white;">Awards</a>
+    <a href="#interests" class="w3-bar-item w3-button" style="color: white;">Personal</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24">ALBA SU</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><b>≡</b></a>
+  <div class="w3-bar-item w3-padding-24" style="color: white;">ALBA SU</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()" style="color: white;"><b>≡</b></a>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -117,23 +250,20 @@
 
   <!-- The Home Section -->
   <div class="w3-container w3-center w3-padding-32" id="home">
-    <img style="width: 80%;max-width: 320px; border-radius: 50%;" alt="profile photo" src="images/beauty_1653637214159.JPG">
-    <h1>Alba (Ruiran) Su</h1>
-    <p style="color: #0e6e55; font-size: 1.1em;">DPhil Student in Engineering Science</p>
-    <p style="color: #666;">University of Oxford | Jardine Scholar</p>
+    <img class="profile-img" style="width: 80%;max-width: 320px; border-radius: 50%;" alt="profile photo" src="images/beauty_1653637214159.JPG">
+    <h1 style="font-size: 2.5em;">Alba (Ruiran) Su</h1>
+    <p style="color: #d4808a; font-size: 1.2em; font-weight: bold;">DPhil Student in Engineering Science</p>
+    <p style="color: #666; font-size: 1.1em;">University of Oxford | Jardine Scholar</p>
     
-    <div class="w3-center" style="margin-top: 20px;">
+    <div class="w3-center" style="margin-top: 25px;">
       <a href="mailto:trin3815@ox.ac.uk" class="btn-link">
-        <i class="fa fa-envelope"></i> Email
+        📧 Email
       </a>
-      <a href="https://www.linkedin.com/in/alba-ruiran-su-a94934282/" class="btn-link" target="_blank">
-        <i class="fa fa-linkedin"></i> LinkedIn
+      <a href="https://www.linkedin.com/in/alba-ruiran-su-a94934282/?originalSubdomain=uk" class="btn-link" target="_blank">
+        💼 LinkedIn
       </a>
       <a href="https://scholar.google.com" class="btn-link" target="_blank">
-        <i class="fa fa-graduation-cap"></i> Google Scholar
-      </a>
-      <a href="your_cv.pdf" class="btn-link" target="_blank">
-        <i class="fa fa-file-pdf"></i> CV
+        🎓 Google Scholar
       </a>
     </div>
   </div>
@@ -141,7 +271,7 @@
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h2>
-    <p class="w3-justify">
+    <p class="w3-justify" style="font-size: 1.05em; line-height: 1.7;">
       I am a DPhil student in Engineering Science at the <span class="highlight-text">University of Oxford</span>, supervised by 
       <a href="https://www.phon.ox.ac.uk/jpierrehumbert" target="_blank">Prof. Janet B. Pierrehumbert</a>. 
       As a <span class="highlight-text">Jardine Scholar</span> (1.5% acceptance rate), my research focuses on developing 
@@ -149,34 +279,34 @@
       to enhance factual reliability and decision-making in complex real-world domains.
     </p>
     
-    <h3>Research Focus</h3>
-    <p class="w3-justify">
+    <h3 style="color: #FFB0B5;">Research Focus</h3>
+    <p class="w3-justify" style="font-size: 1.05em; line-height: 1.7;">
       My work specializes in the intersection of <strong>Graph Neural Networks (GNNs)</strong> and 
       <strong>Large Language Models (LLMs)</strong> to address the pressing issue of misinformation, particularly in 
       <span class="highlight-text">climate science</span>. I develop advanced NLP tools to assist online moderators and 
       fact-checkers in identifying and mitigating false claims on social media platforms.
     </p>
     
-    <h3>Research Interests</h3>
+    <h3 style="color: #FFB0B5;">Research Interests</h3>
     <ul class="w3-ul">
-      <li>Climate Misinformation Detection & Fact-Checking</li>
-      <li>Graph Neural Networks for Social Network Analysis</li>
-      <li>Large Language Models & Retrieval-Augmented Generation (RAG)</li>
-      <li>Multimodal AI & Vision-Language Models</li>
-      <li>Knowledge Graphs & Interpretable AI</li>
-      <li>NLP for Scientific Discovery & Sustainability</li>
+      <li>🌍 Climate Misinformation Detection & Fact-Checking</li>
+      <li>🔗 Graph Neural Networks for Social Network Analysis</li>
+      <li>🤖 Large Language Models & Retrieval-Augmented Generation (RAG)</li>
+      <li>🖼️ Multimodal AI & Vision-Language Models</li>
+      <li>🧠 Knowledge Graphs & Interpretable AI</li>
+      <li>🔬 NLP for Scientific Discovery & Sustainability</li>
     </ul>
   </div>
 
   <!-- News Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
     <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Recent News</h2>
-    <ul class="w3-ul">
-      <li><strong>[Jan 2025]</strong> Co-organizing ClimateNLP Workshop at ACL 2025</li>
-      <li><strong>[Dec 2024]</strong> Paper accepted to EMNLP 2025: "ClimateViz: A Benchmark for Statistical Reasoning"</li>
-      <li><strong>[May 2024]</strong> Presented at ACL 2024 in Bangkok on "Decoding Climate Disagreement"</li>
-      <li><strong>[Mar 2024]</strong> Invited talk at Northwestern University's Medill School on "LLMs for Science"</li>
-      <li><strong>[Oct 2022]</strong> Started DPhil at Oxford as Jardine Scholar</li>
+    <ul class="w3-ul" style="background: transparent;">
+      <li><strong style="color: #d4808a;">[Jan 2025]</strong> Co-organizing ClimateNLP Workshop at ACL 2025 with Prof. Christopher Manning (Stanford) and Prof. Markus Leippold (UZH)! 🎉</li>
+      <li><strong style="color: #d4808a;">[Dec 2024]</strong> Paper accepted to EMNLP 2025: "ClimateViz: A Benchmark for Statistical Reasoning" 📊</li>
+      <li><strong style="color: #d4808a;">[May 2024]</strong> Presented at ACL 2024 in Bangkok on "Decoding Climate Disagreement" 🌏</li>
+      <li><strong style="color: #d4808a;">[Mar 2024]</strong> Invited talk at Northwestern University's Medill School on "LLMs for Science" 🎤</li>
+      <li><strong style="color: #d4808a;">[Oct 2022]</strong> Started DPhil at Oxford as Jardine Scholar 🎓</li>
     </ul>
   </div>
 
@@ -184,7 +314,7 @@
   <div class="w3-container w3-padding-32" id="publications">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Publications</h2>
     
-    <h3>Conference Papers</h3>
+    <h3 style="color: #FFB0B5;">Conference Papers</h3>
     
     <div class="publication-item">
       <div class="publication-title">
@@ -206,7 +336,7 @@
         <strong>Ruiran Su</strong>, Jiasheng Si, Zhijiang Guo, Janet B. Pierrehumbert
       </div>
       <div class="publication-venue">
-        EMNLP 2025 | <a href="#" style="color: #447ec9">paper</a>
+        EMNLP 2025 | <a href="#">paper</a>
       </div>
     </div>
 
@@ -218,7 +348,7 @@
         <strong>Ruiran Su</strong>, Janet B. Pierrehumbert
       </div>
       <div class="publication-venue">
-        ACL 2024 | <a href="https://arxiv.org/abs/2407.07038" style="color: #447ec9" target="_blank">arXiv</a>
+        ACL 2024 | <a href="https://arxiv.org/abs/2407.07038" target="_blank">arXiv</a>
       </div>
     </div>
 
@@ -254,7 +384,7 @@
         Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang, Yanxia Xing
       </div>
       <div class="publication-venue">
-        IEEE/CIC ICC 2023 | <a href="https://ieeexplore.ieee.org/abstract/document/10233789" style="color: #447ec9" target="_blank">IEEE</a>
+        IEEE/CIC ICC 2023 | <a href="https://ieeexplore.ieee.org/abstract/document/10233789" target="_blank">IEEE</a>
       </div>
     </div>
 
@@ -266,7 +396,7 @@
         Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang, Yanxia Xing
       </div>
       <div class="publication-venue">
-        IEEE/CIC ICC 2022 | <a href="https://ieeexplore.ieee.org/abstract/document/9896717" style="color: #447ec9" target="_blank">IEEE</a>
+        IEEE/CIC ICC 2022 | <a href="https://ieeexplore.ieee.org/abstract/document/9896717" target="_blank">IEEE</a>
       </div>
     </div>
 
@@ -278,11 +408,11 @@
         Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang
       </div>
       <div class="publication-venue">
-        IEEE/CIC ICC 2021 | <a href="https://ieeexplore.ieee.org/document/9538888" style="color: #447ec9" target="_blank">IEEE</a>
+        IEEE/CIC ICC 2021 | <a href="https://ieeexplore.ieee.org/document/9538888" target="_blank">IEEE</a>
       </div>
     </div>
 
-    <h3 style="margin-top: 30px;">Book Chapters</h3>
+    <h3 style="margin-top: 30px; color: #FFB0B5;">Book Chapters</h3>
     <div class="publication-item">
       <div class="publication-title">
         Intent-Driven Network: Techniques and Applications
@@ -300,8 +430,8 @@
   <div class="w3-container w3-light-grey w3-padding-32" id="projects">
     <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Research Projects</h2>
 
-    <div class="experience-item">
-      <h3>ClimateViz: Benchmark for Climate Fact-Checking</h3>
+    <div class="project-box">
+      <h3 style="color: #d4808a;">ClimateViz: Benchmark for Climate Fact-Checking</h3>
       <p class="w3-justify">
         ClimateViz is a cutting-edge dataset developed to tackle misinformation in climate science. Sourced from 
         reputable organizations such as NOAA, UK Met Office, and Copernicus, this dataset includes scientific 
@@ -309,7 +439,7 @@
         and textual data, enabling researchers to evaluate and fine-tune large vision-language models (LVLMs) 
         for enhanced fact-checking and retrieval-augmented generation (RAG).
       </p>
-      <p><strong>Key Features:</strong></p>
+      <p><strong style="color: #FFB0B5;">Key Features:</strong></p>
       <ul>
         <li>Multi-source authoritative climate data visualization</li>
         <li>Comprehensive factual annotations for fact-checking</li>
@@ -318,8 +448,8 @@
       </ul>
     </div>
 
-    <div class="experience-item">
-      <h3>Graph Neural Networks for Social Media Analysis</h3>
+    <div class="project-box">
+      <h3 style="color: #d4808a;">Graph Neural Networks for Social Media Analysis</h3>
       <p class="w3-justify">
         Developing GNN-based approaches to understand climate discourse on social media platforms. This research 
         integrates textual and social network data to analyze discussions, identify misinformation spreaders, 
@@ -327,8 +457,8 @@
       </p>
     </div>
 
-    <div class="experience-item">
-      <h3>Intent-Based Networking with Knowledge Graphs</h3>
+    <div class="project-box">
+      <h3 style="color: #d4808a;">Intent-Based Networking with Knowledge Graphs</h3>
       <p class="w3-justify">
         Research on Intent-based Networks (IBNs) empowered by Knowledge Graphs for next-generation telecommunication 
         systems. This work integrates knowledge graph technology with IBN to improve translation and management of 
@@ -341,8 +471,8 @@
   <div class="w3-container w3-padding-32" id="teaching">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Teaching</h2>
     
-    <h3>University of Oxford (2022 - Present)</h3>
-    <p><em>Graduate Teaching Assistant, Department of Engineering Science</em></p>
+    <h3 style="color: #FFB0B5;">University of Oxford (2022 - Present)</h3>
+    <p><em style="color: #666;">Graduate Teaching Assistant, Department of Engineering Science</em></p>
     
     <ul class="w3-ul">
       <li><strong>Computational & Corpus Linguistics:</strong> Supervised tutorials on developing multimodal digital 
@@ -363,9 +493,8 @@
     <div class="experience-item">
       <h3>ACL 2025 - ClimateNLP Workshop Co-Organizer</h3>
       <p><em>2025 | Vienna, Austria</em></p>
-      <ul>
-        <li>Co-organized ClimateNLP workshop with Prof. Christopher Manning (Stanford), Prof. Markus Leippold (UZH)
- and other leading researchers</li>
+      <ul class="w3-ul">
+        <li>Co-organized ClimateNLP workshop with Prof. Christopher Manning (Stanford), Prof. Markus Leippold (UZH) and other leading researchers</li>
         <li>Managed peer review process and curated technical program</li>
         <li>Facilitated interdisciplinary dialogue between NLP researchers and climate scientists</li>
       </ul>
@@ -374,7 +503,7 @@
     <div class="experience-item">
       <h3>China Telecom Research Institute - AI Technology Researcher</h3>
       <p><em>2021 - 2025 | Beijing, China</em></p>
-      <ul>
+      <ul class="w3-ul">
         <li>Developed NLP-based Intent-Based Networking solutions for 6G networks</li>
         <li>Designed knowledge graph frameworks for vertical industry applications</li>
         <li>Presented at Linux Foundation Networking conferences</li>
@@ -385,7 +514,7 @@
     <div class="experience-item">
       <h3>Linux Foundation - Software Engineering Research Intern</h3>
       <p><em>2020 - 2021 | Remote</em></p>
-      <ul>
+      <ul class="w3-ul">
         <li>Contributed to Open Network Automation Platform (ONAP) project</li>
         <li>Conducted empirical studies on open-source community dynamics</li>
       </ul>
@@ -394,7 +523,7 @@
     <div class="experience-item">
       <h3>Tsinghua University - Assistant Researcher</h3>
       <p><em>2020 - 2021 | Beijing, China</em></p>
-      <ul>
+      <ul class="w3-ul">
         <li>Smart City Program: Researched regional inequality through social data mining</li>
         <li>Designed methodologies for calculating cities' Health Index</li>
       </ul>
@@ -406,36 +535,32 @@
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Awards & Honors</h2>
 
     <div class="award-item">
-      <strong>Jardine Scholarship</strong> (1.5% acceptance rate) - University of Oxford, 2022
+      <strong>🏆 Jardine Scholarship</strong> (1.5% acceptance rate) - University of Oxford, 2022
       <br><em>Fully funded DPhil scholarship for outstanding scholars</em>
     </div>
 
     <div class="award-item">
-      <strong>Britton Instrumental Award</strong> - University of Oxford, 2023
+      <strong>🎵 Britton Instrumental Award</strong> - University of Oxford, 2023
     </div>
 
     <div class="award-item">
-      <strong>Distinguished Student of the Year</strong> - Peking University, 2020
+      <strong>⭐ Distinguished Student of the Year</strong> - Peking University, 2020
     </div>
 
     <div class="award-item">
-      <strong>Distinguished Student of the Year</strong> - Peking University, 2019
+      <strong>⭐ Distinguished Student of the Year</strong> - Peking University, 2019
     </div>
 
     <div class="award-item">
-      <strong>First Prize, YLYK English-to-Chinese Translation Contest</strong> - 2019
+      <strong>📝 First Prize, YLYK English-to-Chinese Translation Contest</strong> - 2019
     </div>
 
     <div class="award-item">
-      <strong>President's Undergraduate Scholarship</strong> - 2018
+      <strong>💡 President's Undergraduate Scholarship</strong> - 2018
     </div>
 
     <div class="award-item">
-      <strong>Selection for Ministry of Foreign Affairs</strong> - 2018
-    </div>
-
-    <div class="award-item">
-      <strong>Oxford Lunar New Year Gala</strong> - Featured Performer, 2022
+      <strong>🎭 Oxford Lunar New Year Gala</strong> - Featured Performer, 2022
     </div>
   </div>
 
@@ -443,15 +568,14 @@
   <div class="w3-container w3-light-grey w3-padding-32" id="interests">
     <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Beyond Research</h2>
 
-    <h3>Music & Performance</h3>
+    <h3 style="color: #FFB0B5;">🎵 Music & Performance</h3>
     <p class="w3-justify">
       I am a multi-instrumentalist proficient in piano, keyboards, guitar, ukulele, Irish flute, harmonica, handpan, 
       and dizi. I compose original music that blends folk traditions with modern genres including neo-classical, indie pop, 
-      tropical house, and EDM. As a live performer, I've actively publish 
-     my music on platforms like NetEase.
+      tropical house, and EDM. I actively publish my music on platforms like NetEase.
     </p>
 
-    <h3>Creative Arts</h3>
+    <h3 style="color: #FFB0B5;">🎨 Creative Arts</h3>
     <p class="w3-justify">
       I am a member of the <strong>China Writers Association</strong>, where I engage in creative writing including 
       fiction, poetry, and environmental essays. I'm also a member of <strong>Procreate Artists</strong>, exploring 
@@ -459,13 +583,13 @@
     </p>
 
     <div class="w3-center" style="margin-top: 20px;">
-      <img style="width:60%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" src="images/3.jpg" alt="Artwork">
+      <img style="width:60%; border-radius: 8px; box-shadow: 0 4px 15px rgba(255, 176, 181, 0.3); border: 3px solid var(--pink2);" src="images/3.jpg" alt="Artwork">
     </div>
   </div>
 
   <!-- Footer -->
-  <div class="w3-light-grey w3-center w3-padding-24">
-    <p>© 2025 Alba (Ruiran) Su | Last updated: January 2025</p>
+  <div class="footer-section w3-center w3-padding-24">
+    <p style="font-weight: bold; font-size: 1.1em;">© 2025 Alba (Ruiran) Su | Last updated: January 2025</p>
     <p style="font-size: 0.9em;">
       Visitor count since June 2020: 
       <script type="text/javascript">
@@ -479,7 +603,7 @@
       </script>
     </p>
     <p style="font-size: 0.85em;">
-      Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-opacity">w3.css</a>
+      Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
     </p>
   </div>
 
