@@ -2,80 +2,108 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-
-  <title>Alba (Ruiran) Su's Homepage</title>
-
+  <title>Alba (Ruiran) Su - DPhil Researcher</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Alba (Ruiran) Su is currently a DPhil student at the University of Oxford">
-  <meta name="keywords" content="Ruiran Su, Alba Su, ruiransu, Ruiran, Su, Natural Language Processing, Data Mining, PKU, Computer, Vision">
+  <meta name="description" content="Alba (Ruiran) Su - DPhil student at University of Oxford researching NLP, AI, and climate misinformation">
+  <meta name="keywords" content="Ruiran Su, Alba Su, Natural Language Processing, Climate NLP, Graph Neural Networks, Large Language Models, Oxford, Misinformation Detection">
   <meta name="author" content="Ruiran Su" />
 
   <link rel="stylesheet" href="w3.css">
+  <link rel="icon" type="image/png" href="images/icons.png">
 
   <style>
-  .w3-sidebar a {font-family: "Roboto", sans-serif}
-  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+    .w3-sidebar a {font-family: "Roboto", sans-serif}
+    body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+    
+    .publication-item {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-left: 3px solid #0e6e55;
+      background-color: #f9f9f9;
+    }
+    
+    .publication-title {
+      font-weight: bold;
+      color: #0e6e55;
+      margin-bottom: 5px;
+    }
+    
+    .publication-authors {
+      color: #555;
+      font-size: 0.95em;
+      margin-bottom: 3px;
+    }
+    
+    .publication-venue {
+      font-style: italic;
+      color: #666;
+      font-size: 0.9em;
+    }
+    
+    .award-item {
+      margin-bottom: 10px;
+      padding: 8px 12px;
+      background-color: #fff8e1;
+      border-radius: 4px;
+    }
+    
+    .experience-item {
+      margin-bottom: 20px;
+    }
+    
+    .btn-link {
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 5px;
+      background-color: #0e6e55;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    
+    .btn-link:hover {
+      background-color: #0a5243;
+    }
+    
+    .highlight-text {
+      color: #0e6e55;
+      font-weight: bold;
+    }
+    
+    .section-divider {
+      margin: 30px 0;
+      border-bottom: 2px solid #a16f0b;
+    }
   </style>
-
-  <link rel="icon" type="image/png" href="images/icons.png">
-  <!--
-  <script src="jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>
-  //-->
-
 </head>
-
 
 <body class="w3-content" style="max-width:1000px">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
-    <h3><b>RUIRAN</b></h3>
+    <h3><b>ALBA SU</b></h3>
   </div>
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <a href="#education" class="w3-bar-item w3-button">Education</a>
-    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-    <a href="#internship" class="w3-bar-item w3-button">Internship</a>
+    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#news" class="w3-bar-item w3-button">News</a>
     <a href="#publications" class="w3-bar-item w3-button">Publications</a>
-    <a href="#international conference" class="w3-bar-item w3-button">International Conference</a>
-    <a href="#awards&talents" class="w3-bar-item w3-button">Awards & Talents</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#teaching" class="w3-bar-item w3-button">Teaching</a>
+    <a href="#experience" class="w3-bar-item w3-button">Experience</a>
+    <a href="#awards" class="w3-bar-item w3-button">Awards</a>
+    <a href="#interests" class="w3-bar-item w3-button">Personal</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24">RUIRAN</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
-  </div>
+  <div class="w3-bar-item w3-padding-24">ALBA SU</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><b>≡</b></a>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -87,189 +115,376 @@
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
 
-<!-- The Home Section -->
-    <div class="w3-container w3-center w3-padding-32" id="home">
-      <img style="width: 80%;max-width: 320px" alt="profile photo" src="images/beauty_1653637214159.JPG">
-      <h1>Alba (Ruiran) Su</h1>
-        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-          I am currently pursuing a DPhil in Engineering Science at the University of Oxford, specializing in Natural Language Processing (NLP). My research focuses on the intersection of Graph Neural Networks (GNNs) and Large Language Models (LLMs) to address the pressing issue of misinformation, particularly in climate science. My work aims to develop advanced NLP tools to assist online moderators and fact-checkers in identifying and mitigating false claims.
-          In addition to this, I am exploring the potential of knowledge graphs to enhance next-generation telecommunication systems. My research integrates textual and social network data to analyze discussions and identify misinformation spreaders on social media platforms.
-        <p class="w3-center">
-          <a href="mailto:ruiran.su@trinity.ox.ac.uk">Email</a> &nbsp/&nbsp
-
-          <a href="https://www.linkedin.com/in/alba-ruiran-su-a94934282/"> Linkedin </a>
-        </p>
-        </tbody></table>
+  <!-- The Home Section -->
+  <div class="w3-container w3-center w3-padding-32" id="home">
+    <img style="width: 80%;max-width: 320px; border-radius: 50%;" alt="profile photo" src="images/beauty_1653637214159.JPG">
+    <h1>Alba (Ruiran) Su</h1>
+    <p style="color: #0e6e55; font-size: 1.1em;">DPhil Student in Engineering Science</p>
+    <p style="color: #666;">University of Oxford | Jardine Scholar</p>
+    
+    <div class="w3-center" style="margin-top: 20px;">
+      <a href="mailto:trin3815@ox.ac.uk" class="btn-link">
+        <i class="fa fa-envelope"></i> Email
+      </a>
+      <a href="https://www.linkedin.com/in/alba-ruiran-su-a94934282/" class="btn-link" target="_blank">
+        <i class="fa fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://scholar.google.com" class="btn-link" target="_blank">
+        <i class="fa fa-graduation-cap"></i> Google Scholar
+      </a>
+      <a href="your_cv.pdf" class="btn-link" target="_blank">
+        <i class="fa fa-file-pdf"></i> CV
+      </a>
+    </div>
   </div>
 
-<!-- The News Section -->
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h2>
+    <p class="w3-justify">
+      I am a DPhil student in Engineering Science at the <span class="highlight-text">University of Oxford</span>, supervised by 
+      <a href="https://www.phon.ox.ac.uk/jpierrehumbert" target="_blank">Prof. Janet B. Pierrehumbert</a>. 
+      As a <span class="highlight-text">Jardine Scholar</span> (1.5% acceptance rate), my research focuses on developing 
+      <strong>trustworthy AI systems</strong> that integrate natural language processing, multimodal reasoning, and large language models 
+      to enhance factual reliability and decision-making in complex real-world domains.
+    </p>
+    
+    <h3>Research Focus</h3>
+    <p class="w3-justify">
+      My work specializes in the intersection of <strong>Graph Neural Networks (GNNs)</strong> and 
+      <strong>Large Language Models (LLMs)</strong> to address the pressing issue of misinformation, particularly in 
+      <span class="highlight-text">climate science</span>. I develop advanced NLP tools to assist online moderators and 
+      fact-checkers in identifying and mitigating false claims on social media platforms.
+    </p>
+    
+    <h3>Research Interests</h3>
+    <ul class="w3-ul">
+      <li>Climate Misinformation Detection & Fact-Checking</li>
+      <li>Graph Neural Networks for Social Network Analysis</li>
+      <li>Large Language Models & Retrieval-Augmented Generation (RAG)</li>
+      <li>Multimodal AI & Vision-Language Models</li>
+      <li>Knowledge Graphs & Interpretable AI</li>
+      <li>NLP for Scientific Discovery & Sustainability</li>
+    </ul>
+  </div>
+
+  <!-- News Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
-   <h2>Education</h2>
-<ul>
-    <li><strong>2022 - Present:</strong> DPhil in Engineering Science, University of Oxford.</li>
-    <li><strong>2021 - 2022:</strong> Assistant Researcher, Guanghua School of Management, Peking University.</li>
-    <li><strong>2020 - 2021:</strong> School of Architecture, Tsinghua University.</li>
-    <li><strong>2019 - 2022:</strong> Computer Science, Peking University.</li>
-</ul>
+    <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Recent News</h2>
+    <ul class="w3-ul">
+      <li><strong>[Jan 2025]</strong> Co-organizing ClimateNLP Workshop at ACL 2025 with Prof. Christopher Manning!</li>
+      <li><strong>[Dec 2024]</strong> Paper accepted to EMNLP 2025: "ClimateViz: A Benchmark for Statistical Reasoning"</li>
+      <li><strong>[May 2024]</strong> Presented at ACL 2024 in Bangkok on "Decoding Climate Disagreement"</li>
+      <li><strong>[Mar 2024]</strong> Invited talk at Northwestern University's Medill School on "LLMs for Science"</li>
+      <li><strong>[Oct 2022]</strong> Started DPhil at Oxford as Jardine Scholar</li>
+    </ul>
+  </div>
 
-      
+  <!-- Publications Section -->
+  <div class="w3-container w3-padding-32" id="publications">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Publications</h2>
+    
+    <h3>Conference Papers</h3>
+    
+    <div class="publication-item">
+      <div class="publication-title">
+        Actors, Frames and Arguments: A Multi-Decade Computational Analysis of Climate Discourse in Financial News using Large Language Models
+      </div>
+      <div class="publication-authors">
+        <strong>Ruiran Su</strong>, Markus Leippold, Janet B. Pierrehumbert
+      </div>
+      <div class="publication-venue">
+        Under Review for EACL 2025
+      </div>
+    </div>
 
+    <div class="publication-item">
+      <div class="publication-title">
+        ClimateViz: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts
+      </div>
+      <div class="publication-authors">
+        <strong>Ruiran Su</strong>, Janet B. Pierrehumbert
+      </div>
+      <div class="publication-venue">
+        EMNLP 2025 | <a href="#" style="color: #447ec9">paper</a>
+      </div>
+    </div>
 
-<!-- The Projects Section -->
-<div class="w3-container w3-padding-32" id="projects">
-  <h2>Recent Projects</h2>
+    <div class="publication-item">
+      <div class="publication-title">
+        Decoding Climate Disagreement: A Graph Neural Network-Based Approach to Understanding Social Media Dynamics
+      </div>
+      <div class="publication-authors">
+        <strong>Ruiran Su</strong>, Janet B. Pierrehumbert
+      </div>
+      <div class="publication-venue">
+        ACL 2024 | <a href="https://arxiv.org/abs/2407.07038" style="color: #447ec9" target="_blank">arXiv</a>
+      </div>
+    </div>
 
-  <div class="project">
-    <h4>Intent-based Network Empowered by Knowledge Graph</h4>
+    <div class="publication-item">
+      <div class="publication-title">
+        Next-Generation Networking: Enhancing Intent-Based Architectures with Large Language Models and Retrieval-Augmented Generation
+      </div>
+      <div class="publication-authors">
+        Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang
+      </div>
+      <div class="publication-venue">
+        IEEE BMSB 2025
+      </div>
+    </div>
+
+    <div class="publication-item">
+      <div class="publication-title">
+        Distributed Intelligent Endogenous Design for 6G: A DOICT Fusion Approach
+      </div>
+      <div class="publication-authors">
+        Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang
+      </div>
+      <div class="publication-venue">
+        IWCMC 2025
+      </div>
+    </div>
+
+    <div class="publication-item">
+      <div class="publication-title">
+        An Intent-based Network Empowered by Knowledge Graph: Enhancement of Intent Translation and Management Function for Vertical Industry
+      </div>
+      <div class="publication-authors">
+        Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang, Yanxia Xing
+      </div>
+      <div class="publication-venue">
+        IEEE/CIC ICC 2023 | <a href="https://ieeexplore.ieee.org/abstract/document/10233789" style="color: #447ec9" target="_blank">IEEE</a>
+      </div>
+    </div>
+
+    <div class="publication-item">
+      <div class="publication-title">
+        Trends and Challenges of Policy Verification for Intent-based Networking towards 6G
+      </div>
+      <div class="publication-authors">
+        Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang, Yanxia Xing
+      </div>
+      <div class="publication-venue">
+        IEEE/CIC ICC 2022 | <a href="https://ieeexplore.ieee.org/abstract/document/9896717" style="color: #447ec9" target="_blank">IEEE</a>
+      </div>
+    </div>
+
+    <div class="publication-item">
+      <div class="publication-title">
+        An Intent-based Smart Slicing Framework for Vertical Industry in B5G Networks
+      </div>
+      <div class="publication-authors">
+        Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang
+      </div>
+      <div class="publication-venue">
+        IEEE/CIC ICC 2021 | <a href="https://ieeexplore.ieee.org/document/9538888" style="color: #447ec9" target="_blank">IEEE</a>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 30px;">Book Chapters</h3>
+    <div class="publication-item">
+      <div class="publication-title">
+        Intent-Driven Network: Techniques and Applications
+      </div>
+      <div class="publication-authors">
+        Contributing Author (invited)
+      </div>
+      <div class="publication-venue">
+        Springer Wireless Network Series, forthcoming 2025
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="projects">
+    <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Research Projects</h2>
+
+    <div class="experience-item">
+      <h3>ClimateViz: Benchmark for Climate Fact-Checking</h3>
+      <p class="w3-justify">
+        ClimateViz is a cutting-edge dataset developed to tackle misinformation in climate science. Sourced from 
+        reputable organizations such as NOAA, UK Met Office, and Copernicus, this dataset includes scientific 
+        graphics and visual data enriched with factual annotations. ClimateViz bridges the gap between visual 
+        and textual data, enabling researchers to evaluate and fine-tune large vision-language models (LVLMs) 
+        for enhanced fact-checking and retrieval-augmented generation (RAG).
+      </p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Multi-source authoritative climate data visualization</li>
+        <li>Comprehensive factual annotations for fact-checking</li>
+        <li>Benchmark for vision-language model evaluation</li>
+        <li>Applications in misinformation detection and science communication</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Graph Neural Networks for Social Media Analysis</h3>
+      <p class="w3-justify">
+        Developing GNN-based approaches to understand climate discourse on social media platforms. This research 
+        integrates textual and social network data to analyze discussions, identify misinformation spreaders, 
+        and understand the dynamics of climate-related debates online.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Intent-Based Networking with Knowledge Graphs</h3>
+      <p class="w3-justify">
+        Research on Intent-based Networks (IBNs) empowered by Knowledge Graphs for next-generation telecommunication 
+        systems. This work integrates knowledge graph technology with IBN to improve translation and management of 
+        user intents, with applications in smart grid scenarios and 6G networks.
+      </p>
+    </div>
+  </div>
+
+  <!-- Teaching Section -->
+  <div class="w3-container w3-padding-32" id="teaching">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Teaching</h2>
+    
+    <h3>University of Oxford (2022 - Present)</h3>
+    <p><em>Graduate Teaching Assistant, Department of Engineering Science</em></p>
+    
+    <ul class="w3-ul">
+      <li><strong>Computational & Corpus Linguistics:</strong> Supervised tutorials on developing multimodal digital 
+          repositories, guiding students through practical applications of linguistic analysis</li>
+      <li><strong>Cybersecurity:</strong> Led tutorials covering state-of-the-art security challenges, emerging threats, 
+          and future directions in cybersecurity</li>
+      <li><strong>NLP for Mental Health:</strong> Taught NLP methods for analyzing mental health-related Reddit posts, 
+          including sentiment analysis and ethical considerations</li>
+      <li><strong>AI for Education:</strong> Supervised student projects developing AI-powered chatbots for stress 
+          management and behavioral intervention</li>
+    </ul>
+  </div>
+
+  <!-- Experience Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="experience">
+    <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Professional Experience</h2>
+
+    <div class="experience-item">
+      <h3>ACL 2025 - ClimateNLP Workshop Co-Organizer</h3>
+      <p><em>2025 | Vienna, Austria</em></p>
+      <ul>
+        <li>Co-organized ClimateNLP workshop with Prof. Christopher Manning (Stanford) and other leading researchers</li>
+        <li>Managed peer review process and curated technical program</li>
+        <li>Facilitated interdisciplinary dialogue between NLP researchers and climate scientists</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>China Telecom Research Institute - AI Technology Researcher</h3>
+      <p><em>2021 - 2025 | Beijing, China</em></p>
+      <ul>
+        <li>Developed NLP-based Intent-Based Networking solutions for 6G networks</li>
+        <li>Designed knowledge graph frameworks for vertical industry applications</li>
+        <li>Presented at Linux Foundation Networking conferences</li>
+        <li>Published multiple IEEE conference papers</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Linux Foundation - Software Engineering Research Intern</h3>
+      <p><em>2020 - 2021 | Remote</em></p>
+      <ul>
+        <li>Contributed to Open Network Automation Platform (ONAP) project</li>
+        <li>Conducted empirical studies on open-source community dynamics</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Tsinghua University - Assistant Researcher</h3>
+      <p><em>2020 - 2021 | Beijing, China</em></p>
+      <ul>
+        <li>Smart City Program: Researched regional inequality through social data mining</li>
+        <li>Designed methodologies for calculating cities' Health Index</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Awards Section -->
+  <div class="w3-container w3-padding-32" id="awards">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Awards & Honors</h2>
+
+    <div class="award-item">
+      <strong>Jardine Scholarship</strong> (1.5% acceptance rate) - University of Oxford, 2022
+      <br><em>Fully funded DPhil scholarship for outstanding scholars</em>
+    </div>
+
+    <div class="award-item">
+      <strong>Britton Instrumental Award</strong> - University of Oxford, 2023
+    </div>
+
+    <div class="award-item">
+      <strong>Distinguished Student of the Year</strong> - Peking University, 2020
+    </div>
+
+    <div class="award-item">
+      <strong>Distinguished Student of the Year</strong> - Peking University, 2019
+    </div>
+
+    <div class="award-item">
+      <strong>First Prize, YLYK English-to-Chinese Translation Contest</strong> - 2019
+    </div>
+
+    <div class="award-item">
+      <strong>President's Undergraduate Scholarship</strong> - 2018
+    </div>
+
+    <div class="award-item">
+      <strong>Selection for Ministry of Foreign Affairs</strong> - 2018
+    </div>
+
+    <div class="award-item">
+      <strong>Oxford Lunar New Year Gala</strong> - Featured Performer, 2022
+    </div>
+  </div>
+
+  <!-- Personal Interests Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="interests">
+    <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Beyond Research</h2>
+
+    <h3>Music & Performance</h3>
     <p class="w3-justify">
-      In recent years, Intent-based Networks (IBNs) have emerged as a revolutionary approach to managing and optimizing complex networks. Nevertheless, modern IBN systems often encounter difficulties in accurately interpreting user intent and translating it into network configurations. Our research introduces an Intent-based Network empowered by Knowledge Graph (IBN-KG), which ingeniously integrates knowledge graph technology with IBN, significantly improving the translation and management of user intents. The study primarily focuses on constructing a knowledge graph for grid scenarios and leveraging this graph to enhance the IBN's performance. Additionally, we present a customized Knowledge Graph construction framework, specifically designed for vertical industry applications, with a special emphasis on smart grid scenarios. This encompasses the development of a unique data layer, extraction of knowledge through natural language processing, knowledge fusion, continuous updating of knowledge, and the application of knowledge through user interfaces. Overall, the fusion of Knowledge Graph technology with IBN heralds a smarter, more adaptable, and efficient method for translating and managing user intent in network configurations, particularly in smart grid applications.
+      I am a multi-instrumentalist proficient in piano, keyboards, guitar, ukulele, Irish flute, harmonica, handpan, 
+      and dizi. I compose original music that blends folk traditions with modern genres including neo-classical, indie pop, 
+      tropical house, and EDM. As a live performer, I've performed at Hey Elephant Bar in Oxford and actively publish 
+      my music on NetEase.
     </p>
-  </div>
 
-  <div class="project">
-    <h4>ClimateViz</h4>
+    <h3>Creative Arts</h3>
     <p class="w3-justify">
-      ClimateViz is a cutting-edge dataset developed to tackle the challenge of misinformation in climate science. In an era where false narratives about climate change can significantly hinder public understanding and policy-making, ClimateViz serves as a foundational resource for the research community.
-      Sourced from reputable organizations such as NOAA, the UK Met Office, and Copernicus, this dataset includes scientific graphics and visual data enriched with factual annotations. ClimateViz is designed to bridge the gap between visual and textual data, enabling researchers to evaluate and fine-tune large vision-language models (LVLMs) for enhanced fact-checking and retrieval-augmented generation (RAG).
-  </div>
-
-
-  <div class="project">
-    <h4>Implementing Automatic 5G Network Slicing on the Open Network Automation Platform</h4>
-    <img style="width:65%;" src="images/ONAP.png" alt="ONAP">
-    <p class="w3-justify">
-      Intent-Based Networking (IBN) represents an evolution in networking, wherein network control logic is decoupled, and closed-loop orchestration techniques are employed to automate application intents. An IBN is adaptive and intelligent, capable of interpreting operator intents in real-time to dynamically adjust network configurations and ensure reliability. End-to-end network slicing in 5G and beyond offers immense potential for the telecommunication industry to meet diverse Service Level Agreements (SLAs) for different verticals. However, the realization of this potential requires a smarter and more flexible slicing management framework. Research and standardization bodies such as 3GPP are increasingly focusing on smart slicing, which is geared towards accommodating user intents and requirements through real-time recognition and adaptive network slicing to meet SLAs.
+      I am a member of the <strong>China Writers Association</strong>, where I engage in creative writing including 
+      fiction, poetry, and environmental essays. I'm also a member of <strong>Procreate Artists</strong>, exploring 
+      digital art alongside traditional painting with acrylic and watercolor mediums.
     </p>
+
+    <div class="w3-center" style="margin-top: 20px;">
+      <img style="width:60%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" src="images/3.jpg" alt="Artwork">
+    </div>
   </div>
 
-</div>
-
-  
-  <!-- The Internship Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="internship">
-    <h2>Internship</h2>
-      <p><li> 2020-  AI Technology Research Engineer, China Telecom Research Institute </li></p>
-      <p><li> 2020-2021  Assistant Researcher, Tsinghua University </li></p>
-      <p><li> 2019       National Development and Reform Commission (part-time holiday work)</li></p>
-      <p><li> 2019       The United Nations Environment Programme (part-time holiday work) </li></p>
-  </div>
-<!-- The Publications Section -->
-<div class="w3-container w3-padding-32" id="publications">
-    <h2>Publications</h2>
-    <h4>Conference Papers:</h4>
-    <ol>
-            <li>
-            <p>
-                <strong>Decoding Climate Disagreement: A Graph Neural Network-Based Approach to Understanding Social Media Dynamics</strong>
-                <br>
-                <strong>Ruiran Su</strong>,  Janet Pierrehumbert (Supervisor),
-                <br>
-                <em>ACL </em> 2024 | <a style="color: #447ec9" href="https://arxiv.org/abs/2407.07038">paper</a>
-            </p>
-        </li>
-        <li>
-            <p>
-                <strong>An Intent-based Network Empowered by Knowledge Graph: Enhancement of Intent Translation and Management Function for Vertical Industry</strong>
-                <br>
-                Dong Wang (Supervisor), <strong>Ruiran Su</strong>
-                <br>
-                <em>CIC </em> 2023 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/10233789">paper</a>
-            </p>
-        </li>
-        <li>
-            <p>
-                <strong>Trends and Challenges of Policy Verification for Intent-based Networking towards 6G</strong>
-                <br>
-                Dong Wang (Supervisor), <strong>Ruiran Su</strong>
-                <br>
-                <em>CIC </em> 2022 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9896717">paper</a>
-            </p>
-        </li>
-        <li>
-            <p>
-                <strong>An Intent-based Smart Slicing Framework for Vertical Industry in B5G Networks</strong>
-                <br>
-                Dong Wang (Supervisor), <strong>Ruiran Su</strong>
-                <br>
-                <em>CIC </em> 2021 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/document/9538888">paper</a>
-            </p>
-        </li>
-    </ol>
-</div>
-
-
-
-<!-- The International Conference Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="International Conference">
-    <h2>International Conference</h2>
-      <p><li> The 62nd Annual Meeting of the Association for Computational Linguistics, 2024 </p>
-      <p><li> IEEE NetSoft 2022-Tech Talk at Workshop in Intent-based Networking (WIN) </p>
-      <p><li> ONES - Intent-based Networks Panel, September 13, 2021.  </p>
-      <p><li> The LFN Developer & Testing Forum, February 1 - 4, 2021.  </p>
-
-  </div>
-
-  <!-- The Awards Section -->
-  <div class="w3-container w3-padding-32" id="awards&talents">
-    <h2>Awards & Talents</h2>
-
-    <h4> Awards</h4>
-    <p><li> 2023, Britton Instrumental Award, University of Oxford</p>
-    <p><li> 2022, Oxford Lunar New Year Gala </p>
-    <p><li> 2020, Distinguished Student of the Year 2020, Peking University</p>
-    <p><li> 2019, Distinguished Student of the Year 2019, Peking University, First Prize in YLYK English-to-Chinese Translation Contest</p>
-    <p><li> 2018, Selection for Ministry of Foreign Affairs, President's Undergraduate Scholarship </p>
-
-
-    <h4> Talents</h4>
-    <p><li> Live singer and Ukulele performer at Hey Elephant Bar </p>
-    <p><li> Member of China Writers Association </p>
-    <p><li> Member of Procreate Artists</p>
-    <img style="width:80%;" src="images/3.jpg">
-  </div>  
-
+  <!-- Footer -->
   <div class="w3-light-grey w3-center w3-padding-24">
-
-    Welcome to this website.
-
-  No.
-  <script type="text/javascript">
-  var sc_project=12347113; 
-  var sc_invisible=0; 
-  var sc_security="21aca5d1"; 
-  var sc_https=1; 
-  var scJsHost = "https://";
-  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-  "statcounter.com/counter/counter.js'></"+"script>");
-  </script> Visitor Since Jun 2020. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
-  <noscript>
-    <div class="statcounter"><a title="Web Analytics Made Easy -
-  StatCounter" href="https://statcounter.com/" target="_blank"><img
-  class="statcounter" src="https://c.statcounter.com/12347113/0/21aca5d1/0/"
-  alt="Web Analytics Made Easy - StatCounter"></a></div>
-  </noscript>
-  <!-- End of Statcounter Code -->
-
+    <p>© 2025 Alba (Ruiran) Su | Last updated: January 2025</p>
+    <p style="font-size: 0.9em;">
+      Visitor count since June 2020: 
+      <script type="text/javascript">
+      var sc_project=12347113; 
+      var sc_invisible=0; 
+      var sc_security="21aca5d1"; 
+      var sc_https=1; 
+      var scJsHost = "https://";
+      document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+      "statcounter.com/counter/counter.js'></"+"script>");
+      </script>
+    </p>
+    <p style="font-size: 0.85em;">
+      Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-opacity">w3.css</a>
+    </p>
   </div>
 
-  <!-- End page content -->
 </div>
 
 <script>
-// Accordion 
-function myAccFunc() {
-  var x = document.getElementById("demoAcc");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
-
 // Open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
