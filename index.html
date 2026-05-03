@@ -2,19 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-  <title>Alba (Ruiran) Su - DPhil Researcher</title>
+  <title>Alba (Ruiran) Su - DPhil Researcher & AI Policy Fellow</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Alba (Ruiran) Su - DPhil student at University of Oxford researching NLP, AI, and climate misinformation">
-  <meta name="keywords" content="Ruiran Su, Alba Su, Natural Language Processing, Climate NLP, Graph Neural Networks, Large Language Models, Oxford, Misinformation Detection">
+  <meta name="description" content="Alba (Ruiran) Su - DPhil student at University of Oxford researching AI safety, causal inference, and climate NLP. Incoming IAPS AI Policy Fellow.">
+  <meta name="keywords" content="Ruiran Su, Alba Su, AI Safety, Frontier AI Evaluation, Causal Inference, NLP, Climate AI, Graph Neural Networks, Oxford, IAPS">
   <meta name="author" content="Ruiran Su" />
 
   <link rel="stylesheet" href="w3.css">
   <link rel="icon" type="image/png" href="images/icons.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
-    /* Soft Pink Color Palette */
     :root {
       --pink1: #FFD3D6;
       --pink2: #FFE5E7;
@@ -22,70 +22,83 @@
       --pink3: #FFC6CA;
       --pink4: #F9E6E4;
       --pink5: #FFB0B5;
+      --accent: #d4808a;
+      --accent-dark: #b8616c;
     }
-    
-    .w3-sidebar a {font-family: "Roboto", sans-serif}
-    body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
-    
-    /* Sidebar styling with new colors */
+
+    .w3-sidebar a { font-family: "Roboto", sans-serif; }
+    body, h1, h2, h3, h4, h5, h6, .w3-wide { font-family: "Montserrat", sans-serif; }
+
     .w3-sidebar {
       background: linear-gradient(180deg, var(--pink5) 0%, var(--pink3) 100%) !important;
     }
-    
     .w3-sidebar a:hover {
       background-color: var(--pink1) !important;
     }
-    
-    /* Header styling */
     .w3-bar.w3-black {
       background: linear-gradient(90deg, var(--pink5) 0%, var(--pink3) 100%) !important;
     }
-    
-    /* Publication items */
+
+    /* ── BADGE: new for incoming fellowship ── */
+    .badge-new {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff8c94 0%, var(--accent) 100%);
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 2px 8px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+
+    /* ── HERO BANNER ── */
+    .hero-banner {
+      background: linear-gradient(135deg, var(--pink4) 0%, #fff 60%, var(--peach) 100%);
+      border-bottom: 2px solid var(--pink2);
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 0.85em;
+      color: var(--accent-dark);
+      font-weight: 500;
+    }
+    .hero-banner a { color: var(--accent-dark); text-decoration: underline; }
+
+    /* ── PUBLICATIONS ── */
     .publication-item {
       margin-bottom: 15px;
-      padding: 12px;
+      padding: 14px;
       border-left: 4px solid var(--pink5);
-      background: linear-gradient(to right, var(--pink4) 0%, #ffffff 50%);
+      background: linear-gradient(to right, var(--pink4) 0%, #ffffff 60%);
       border-radius: 4px;
       transition: transform 0.2s;
     }
-    
     .publication-item:hover {
       transform: translateX(5px);
       box-shadow: 0 2px 8px rgba(255, 176, 181, 0.3);
     }
-    
-    .publication-title {
-      font-weight: bold;
-      color: #d4808a;
-      margin-bottom: 5px;
+    .publication-title { font-weight: bold; color: #d4808a; margin-bottom: 5px; }
+    .publication-authors { color: #555; font-size: 0.95em; margin-bottom: 3px; }
+    .publication-venue { font-style: italic; color: #666; font-size: 0.9em; }
+    .publication-venue a { color: #d4808a; text-decoration: none; font-weight: bold; }
+    .publication-venue a:hover { color: var(--pink5); text-decoration: underline; }
+    .pub-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 20px;
+      margin-left: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      vertical-align: middle;
     }
-    
-    .publication-authors {
-      color: #555;
-      font-size: 0.95em;
-      margin-bottom: 3px;
-    }
-    
-    .publication-venue {
-      font-style: italic;
-      color: #666;
-      font-size: 0.9em;
-    }
-    
-    .publication-venue a {
-      color: #d4808a;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    
-    .publication-venue a:hover {
-      color: var(--pink5);
-      text-decoration: underline;
-    }
-    
-    /* Award items */
+    .pub-badge.accepted { background: #e8f5e9; color: #2e7d32; }
+    .pub-badge.new { background: #fce4ec; color: #ad1457; }
+
+    /* ── AWARDS ── */
     .award-item {
       margin-bottom: 10px;
       padding: 10px 15px;
@@ -93,19 +106,21 @@
       border-radius: 6px;
       border-left: 3px solid var(--pink3);
     }
-    
-    .experience-item {
-      margin-bottom: 20px;
+    .award-item.top {
+      border-left: 4px solid var(--accent);
+      background: linear-gradient(135deg, #ffd6da 0%, var(--peach) 100%);
     }
-    
+
+    /* ── EXPERIENCE ── */
+    .experience-item { margin-bottom: 20px; }
     .experience-item h3 {
       color: #d4808a;
       border-bottom: 2px solid var(--pink5);
       padding-bottom: 5px;
       display: inline-block;
     }
-    
-    /* Button styling */
+
+    /* ── BUTTONS ── */
     .btn-link {
       display: inline-block;
       padding: 10px 20px;
@@ -118,76 +133,40 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       font-weight: 500;
     }
-    
     .btn-link:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(255, 176, 181, 0.4);
       background: linear-gradient(135deg, var(--pink5) 0%, var(--pink3) 100%);
     }
-    
-    .highlight-text {
-      color: #d4808a;
-      font-weight: bold;
-    }
-    
-    /* Section headers */
-    h2 {
-      color: #d4808a !important;
-    }
-    
-    .w3-border-bottom {
-      border-bottom: 3px solid var(--pink5) !important;
-    }
-    
-    /* Alternate section backgrounds */
-    .w3-light-grey {
-      background: linear-gradient(to bottom, #ffffff 0%, var(--pink4) 100%) !important;
-    }
-    
-    /* Links */
-    a {
-      color: #d4808a;
-      transition: color 0.3s;
-    }
-    
-    a:hover {
-      color: var(--pink5);
-    }
-    
-    /* Profile image border */
+
+    .highlight-text { color: #d4808a; font-weight: bold; }
+    h2 { color: #d4808a !important; }
+    .w3-border-bottom { border-bottom: 3px solid var(--pink5) !important; }
+    .w3-light-grey { background: linear-gradient(to bottom, #ffffff 0%, var(--pink4) 100%) !important; }
+
+    a { color: #d4808a; transition: color 0.3s; }
+    a:hover { color: var(--pink5); }
+
     .profile-img {
       border: 5px solid var(--pink5);
       box-shadow: 0 4px 15px rgba(255, 176, 181, 0.3);
     }
-    
-    /* Lists */
+
     .w3-ul li {
       border-left: 3px solid var(--pink2);
       padding-left: 15px;
       margin-bottom: 8px;
       transition: border-color 0.3s;
     }
-    
-    .w3-ul li:hover {
-      border-left-color: var(--pink5);
-    }
-    
-    /* Footer styling */
+    .w3-ul li:hover { border-left-color: var(--pink5); }
+
     .footer-section {
       background: linear-gradient(to right, var(--pink2) 0%, var(--peach) 50%, var(--pink2) 100%);
       color: #555;
     }
-    
-    .footer-section a {
-      color: #d4808a;
-      font-weight: bold;
-    }
-    
-    .footer-section a:hover {
-      color: var(--pink5);
-    }
-    
-    /* Name styling */
+    .footer-section a { color: #d4808a; font-weight: bold; }
+    .footer-section a:hover { color: var(--pink5); }
+
     h1 {
       background: linear-gradient(135deg, var(--pink5) 0%, #d4808a 100%);
       -webkit-background-clip: text;
@@ -195,8 +174,7 @@
       background-clip: text;
       font-weight: bold;
     }
-    
-    /* Project boxes */
+
     .project-box {
       background: white;
       border: 2px solid var(--pink2);
@@ -205,424 +183,520 @@
       margin-bottom: 15px;
       transition: all 0.3s;
     }
-    
     .project-box:hover {
       border-color: var(--pink5);
       box-shadow: 0 5px 15px rgba(255, 176, 181, 0.2);
     }
+
+    /* ── STAT CARDS ── */
+    .stat-row {
+      display: flex;
+      gap: 12px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+    .stat-card {
+      flex: 1;
+      min-width: 120px;
+      background: white;
+      border: 1.5px solid var(--pink2);
+      border-radius: 10px;
+      padding: 14px 10px;
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 1.6em;
+      font-weight: 700;
+      color: var(--accent);
+      display: block;
+    }
+    .stat-label {
+      font-size: 0.72em;
+      color: #888;
+      margin-top: 3px;
+      line-height: 1.3;
+    }
+
+    /* ── NEWS ── */
+    .news-item {
+      display: flex;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--pink2);
+      align-items: flex-start;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-date {
+      font-size: 0.8em;
+      font-weight: 700;
+      color: var(--accent);
+      min-width: 80px;
+      padding-top: 2px;
+    }
+    .news-text { font-size: 0.92em; color: #444; line-height: 1.5; }
   </style>
 </head>
 
 <body class="w3-content" style="max-width:1000px">
 
-<!-- Sidebar/menu -->
+<!-- Announcement banner -->
+<div class="hero-banner">
+  🎉 Incoming <strong>IAPS AI Policy Fellow</strong> (Summer 2026) — selected from 8,200+ applicants (0.4% acceptance rate)
+</div>
+
+<!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <h3 style="color: white;"><b>ALBA SU</b></h3>
   </div>
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
-    <a href="#home" class="w3-bar-item w3-button" style="color: white;">Home</a>
-    <a href="#about" class="w3-bar-item w3-button" style="color: white;">About</a>
-    <a href="#news" class="w3-bar-item w3-button" style="color: white;">News</a>
-    <a href="#publications" class="w3-bar-item w3-button" style="color: white;">Publications</a>
-    <a href="#projects" class="w3-bar-item w3-button" style="color: white;">Projects</a>
-    <a href="#teaching" class="w3-bar-item w3-button" style="color: white;">Teaching</a>
-    <a href="#experience" class="w3-bar-item w3-button" style="color: white;">Experience</a>
-    <a href="#awards" class="w3-bar-item w3-button" style="color: white;">Awards</a>
-    <a href="#interests" class="w3-bar-item w3-button" style="color: white;">Personal</a>
+    <a href="#home"         class="w3-bar-item w3-button" style="color:white;">Home</a>
+    <a href="#about"        class="w3-bar-item w3-button" style="color:white;">About</a>
+    <a href="#news"         class="w3-bar-item w3-button" style="color:white;">News</a>
+    <a href="#publications" class="w3-bar-item w3-button" style="color:white;">Publications</a>
+    <a href="#projects"     class="w3-bar-item w3-button" style="color:white;">Projects</a>
+    <a href="#teaching"     class="w3-bar-item w3-button" style="color:white;">Teaching</a>
+    <a href="#experience"   class="w3-bar-item w3-button" style="color:white;">Experience</a>
+    <a href="#awards"       class="w3-bar-item w3-button" style="color:white;">Awards</a>
+    <a href="#interests"    class="w3-bar-item w3-button" style="color:white;">Personal</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24" style="color: white;">ALBA SU</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()" style="color: white;"><b>≡</b></a>
+  <div class="w3-bar-item w3-padding-24" style="color:white;">ALBA SU</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()" style="color:white;"><b>≡</b></a>
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- !PAGE CONTENT! -->
+<!-- PAGE CONTENT -->
 <div class="w3-main" style="margin-left:150px">
 
-  <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
 
-  <!-- The Home Section -->
+  <!-- HOME -->
   <div class="w3-container w3-center w3-padding-32" id="home">
-    <img class="profile-img" style="width: 80%;max-width: 320px; border-radius: 50%;" alt="profile photo" src="images/beauty_1653637214159.JPG">
-    <h1 style="font-size: 2.5em;">Alba (Ruiran) Su</h1>
-    <p style="color: #d4808a; font-size: 1.2em; font-weight: bold;">DPhil Student in Engineering Science</p>
-    <p style="color: #666; font-size: 1.1em;">University of Oxford | Jardine Scholar</p>
-    
-    <div class="w3-center" style="margin-top: 25px;">
-      <a href="mailto:trin3815@ox.ac.uk" class="btn-link">
-        📧 Email
-      </a>
-      <a href="https://www.linkedin.com/in/alba-ruiran-su-a94934282/?originalSubdomain=uk" class="btn-link" target="_blank">
-        💼 LinkedIn
-      </a>
-      <a href="https://scholar.google.com/citations?user=Mv7-7G4AAAAJ&hl" class="btn-link" target="_blank">
-        🎓 Google Scholar
-      </a>
+    <img class="profile-img" style="width:80%;max-width:320px;border-radius:50%;" alt="profile photo" src="images/beauty_1653637214159.JPG">
+    <h1 style="font-size:2.5em;">Alba (Ruiran) Su</h1>
+    <p style="color:#d4808a;font-size:1.15em;font-weight:bold;">DPhil Researcher &amp; AI Policy Fellow</p>
+    <p style="color:#666;font-size:1em;">University of Oxford · Jardine Scholar</p>
+    <p style="color:#888;font-size:0.9em;margin-top:4px;">Incoming IAPS AI Policy Fellow · Summer 2026</p>
+
+    <div class="w3-center" style="margin-top:25px;">
+      <a href="mailto:trin3815@ox.ac.uk" class="btn-link">📧 Email</a>
+      <a href="https://www.linkedin.com/in/alba-ruiran-su-a94934282/?originalSubdomain=uk" class="btn-link" target="_blank">💼 LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=Mv7-7G4AAAAJ&hl" class="btn-link" target="_blank">🎓 Google Scholar</a>
+      <a href="https://ruiransu.github.io" class="btn-link" target="_blank">🌐 GitHub</a>
+    </div>
+
+    <!-- stat cards -->
+    <div class="stat-row" style="justify-content:center;margin-top:30px;">
+      <div class="stat-card">
+        <span class="stat-number">10+</span>
+        <div class="stat-label">Publications<br>(conf. + journal)</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">0.4%</span>
+        <div class="stat-label">IAPS Fellowship<br>acceptance rate</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">49,862</span>
+        <div class="stat-label">CLIMATEVIZ<br>chart-claim pairs</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">3</span>
+        <div class="stat-label">Competitive<br>research grants</div>
+      </div>
     </div>
   </div>
 
-  <!-- About Section -->
+  <!-- ABOUT -->
   <div class="w3-container w3-padding-32" id="about">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h2>
-    <p class="w3-justify" style="font-size: 1.05em; line-height: 1.7;">
-      I am a DPhil student in Engineering Science at the <span class="highlight-text">University of Oxford</span>, supervised by 
-      <a href="https://www.phon.ox.ac.uk/jpierrehumbert" target="_blank">Prof. Janet B. Pierrehumbert</a>. 
-      As a <span class="highlight-text">Jardine Scholar</span> (1.5% acceptance rate), my research focuses on developing 
-      <strong>trustworthy AI systems</strong> that integrate natural language processing, multimodal reasoning, and large language models 
-      to enhance factual reliability and decision-making in complex real-world domains.
+    <p class="w3-justify" style="font-size:1.05em;line-height:1.75;">
+      I am a DPhil student in Engineering Science at the <span class="highlight-text">University of Oxford</span>, 
+      supervised by <a href="https://www.phon.ox.ac.uk/jpierrehumbert" target="_blank">Prof. Janet B. Pierrehumbert</a>, 
+      and an incoming <span class="highlight-text">IAPS AI Policy Fellow</span> (Summer 2026, top 0.4% of 8,200+ applicants). 
+      As a <span class="highlight-text">Jardine Scholar</span> (1.5% acceptance rate), my work bridges 
+      <strong>technical AI research</strong> and <strong>international AI governance</strong>.
     </p>
-    
-    <h3 style="color: #FFB0B5;">Research Focus</h3>
-    <p class="w3-justify" style="font-size: 1.05em; line-height: 1.7;">
-      My work specializes in the intersection of <strong>Graph Neural Networks (GNNs)</strong> and 
-      <strong>Large Language Models (LLMs)</strong> to address the pressing issue of misinformation, particularly in 
-      <span class="highlight-text">climate science</span>. I develop advanced NLP tools to assist online moderators and 
-      fact-checkers in identifying and mitigating false claims on social media platforms.
+
+    <h3 style="color:#FFB0B5;">Research Focus</h3>
+    <p class="w3-justify" style="font-size:1.05em;line-height:1.75;">
+      My research addresses <strong>catastrophic risks from advanced AI</strong>, with a focus on 
+      <em>evaluation interoperability</em> as a mechanism for preventing race-to-the-bottom dynamics in 
+      dangerous-capability deployment. I develop verifiable safety frameworks bridging US (NIST AI 600-1), 
+      UK (AISI Frontier AI Evals), and Chinese (TC260 / GB/T series) standards — using first-hand analysis 
+      of primary Chinese standards texts to mitigate strategic miscalibration between great powers.
     </p>
-    
-    <h3 style="color: #FFB0B5;">Research Interests</h3>
+    <p class="w3-justify" style="font-size:1.05em;line-height:1.75;">
+      On the technical side, I build <strong>causal multimodal AI frameworks</strong> integrating satellite imagery, 
+      scientific charts, and text for environmental accountability, and develop the 
+      <strong>CLIMATEVIZ benchmark</strong> for statistical reasoning in high-stakes scientific domains.
+    </p>
+
+    <h3 style="color:#FFB0B5;">Research Interests</h3>
     <ul class="w3-ul">
-      <li>🌍 Climate Misinformation Detection & Fact-Checking</li>
-      <li>🔗 Graph Neural Networks for Social Network Analysis</li>
-      <li>🤖 Large Language Models & Retrieval-Augmented Generation (RAG)</li>
-      <li>🖼️ Multimodal AI & Vision-Language Models</li>
-      <li>🧠 Knowledge Graphs & Interpretable AI</li>
-      <li>🔬 NLP for Scientific Discovery & Sustainability</li>
+      <li>🛡️ AI Safety &amp; Frontier AI Evaluation (NIST, AISI, TC260)</li>
+      <li>🌐 International AI Governance &amp; Evaluation Interoperability</li>
+      <li>🔗 Causal Inference &amp; Explainability (DAGs, ICP, do-calculus)</li>
+      <li>🌍 Climate Misinformation Detection &amp; Scientific Fact-Checking</li>
+      <li>🖼️ Multimodal AI &amp; Vision-Language Models</li>
+      <li>🤖 Graph Neural Networks for Social Network Analysis</li>
+      <li>🔬 Argument Mining &amp; NLP for Scientific Discovery</li>
     </ul>
   </div>
 
-  <!-- News Section -->
+  <!-- NEWS -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
     <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Recent News</h2>
-    <ul class="w3-ul" style="background: transparent;">
-      <li><strong style="color: #d4808a;">[Sep 2025]</strong> Invited interview at Northwestern University's Medill School on "LLMs for Science" 🎤</li>
-      <li><strong style="color: #d4808a;">[August 2025]</strong> Paper accepted to EMNLP 2025 main conference: "ClimateViz: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts" 📊</li>
-      <li><strong style="color: #d4808a;">[July 2025]</strong> Co-organizing ClimateNLP Workshop at ACL 2025 with Prof. Christopher Manning (Stanford) and Prof. Markus Leippold (UZH)! 🎉</li>
-      <li><strong style="color: #d4808a;">[May 2024]</strong> Presented at ACL 2024 in Bangkok on Climate Disagreement on Social Media 🌏</li>
-      <li><strong style="color: #d4808a;">[Oct 2022]</strong> Started DPhil at Oxford as Jardine Scholar 🎓</li>
-    </ul>
+
+    <div class="news-item">
+      <div class="news-date">[2026] <span class="badge-new">New</span></div>
+      <div class="news-text">🏆 Selected as <strong>IAPS AI Policy Fellow</strong> (Summer 2026) — International Strategy Track, focusing on US-UK-China frontier AI evaluation interoperability. Top 0.4% of 8,200+ applicants.</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">[2026]</div>
+      <div class="news-text">📄 Paper accepted at <strong>EACL 2026</strong>: "Actors, Frames and Arguments: A Multi-Decade Computational Analysis of Climate Discourse in Financial News using LLMs" (with Markus Leippold et al.)</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">[2026]</div>
+      <div class="news-text">📝 Invited as Editorial Reviewer for <em>Climatic Change</em> (Springer) Special Collection: NLP and AI as Climate Solutions.</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">[2025]</div>
+      <div class="news-text">🎤 Invited talk at Northwestern University's Medill School of Journalism on "LLMs for Scientific Causal Reasoning."</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">[2025]</div>
+      <div class="news-text">📊 Paper accepted at <strong>EMNLP 2025</strong>: "CLIMATEVIZ: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts."</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">[2025]</div>
+      <div class="news-text">🎉 Co-organized <strong>ClimateNLP Workshop at ACL 2025</strong> (Vienna) alongside Prof. Christopher Manning (Stanford) and leading NLP scientists.</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">[2025]</div>
+      <div class="news-text">🏅 Awarded <strong>Great Britain-China Educational Trust Award</strong> (2025) supporting Sino-British academic exchange.</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">[2024]</div>
+      <div class="news-text">💡 Two-time recipient of <strong>Google Research Grant</strong> (2024 &amp; 2025) for causal verification frameworks. Also awarded <strong>Cohere Research Grant</strong> (2024) for foundation model interpretability.</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">[2024]</div>
+      <div class="news-text">🌏 Presented at <strong>ACL 2024</strong>, Bangkok: "Decoding Climate Disagreement: A Graph Neural Network Approach."</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">[2023]</div>
+      <div class="news-text">⭐ Received <strong>St. Gallen Symposium Emerging Leader Award</strong> (GLC) for cross-disciplinary leadership in responsible AI.</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">[2022]</div>
+      <div class="news-text">🎓 Started DPhil at Oxford as <strong>Jardine Scholar</strong>.</div>
+    </div>
   </div>
 
-  <!-- Publications Section -->
+  <!-- PUBLICATIONS -->
   <div class="w3-container w3-padding-32" id="publications">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Publications</h2>
-    
-    <h3 style="color: #FFB0B5;">Conference Papers</h3>
-    
+
+    <h3 style="color:#FFB0B5;">Conference &amp; Journal Papers</h3>
+
     <div class="publication-item">
       <div class="publication-title">
         Actors, Frames and Arguments: A Multi-Decade Computational Analysis of Climate Discourse in Financial News using Large Language Models
+        <span class="pub-badge accepted">Accepted</span>
       </div>
-      <div class="publication-authors">
-        <strong>Ruiran Su</strong>, Markus Leippold, Janet B. Pierrehumbert
-      </div>
-      <div class="publication-venue">
-        Under Review for EACL 2025
-      </div>
+      <div class="publication-authors"><strong>Ruiran Su</strong>, Markus Leippold, Janet B. Pierrehumbert et al.</div>
+      <div class="publication-venue">EACL 2026</div>
     </div>
 
     <div class="publication-item">
       <div class="publication-title">
-        ClimateViz: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts
+        CLIMATEVIZ: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts
       </div>
-      <div class="publication-authors">
-        <strong>Ruiran Su</strong>, Jiasheng Si, Zhijiang Guo, Janet B. Pierrehumbert
-      </div>
-      <div class="publication-venue">
-        EMNLP 2025 | <a href="https://arxiv.org/abs/2506.08700" target="_blank">arXiv</a>
-      </div>
+      <div class="publication-authors"><strong>Ruiran Su</strong>, Junda Si, Zheng Guo, Janet B. Pierrehumbert</div>
+      <div class="publication-venue">EMNLP 2025 | <a href="https://arxiv.org/abs/2506.08700" target="_blank">arXiv</a></div>
     </div>
 
     <div class="publication-item">
       <div class="publication-title">
-        Decoding Climate Disagreement: A Graph Neural Network-Based Approach to Understanding Social Media Dynamics
+        Decoding Climate Disagreement: A Graph Neural Network Approach to Understanding Social Media Dynamics
       </div>
-      <div class="publication-authors">
-        <strong>Ruiran Su</strong>, Janet B. Pierrehumbert
+      <div class="publication-authors"><strong>Ruiran Su</strong>, Janet B. Pierrehumbert</div>
+      <div class="publication-venue">ACL ClimateNLP 2024 | <a href="https://arxiv.org/abs/2407.07038" target="_blank">arXiv</a></div>
+    </div>
+
+    <div class="publication-item">
+      <div class="publication-title">
+        Scheduling Dependent Functions at the Network Edge
       </div>
-      <div class="publication-venue">
-        ACL 2024 | <a href="https://arxiv.org/abs/2407.07038" target="_blank">arXiv</a>
-      </div>
+      <div class="publication-authors">Xishuo Li, Shan Zhang, Junyi He, Tie Ma, Zhen Li, Junli Xue, and <strong>Ruiran Su</strong></div>
+      <div class="publication-venue">IEEE Internet of Things Journal, 2026</div>
     </div>
 
     <div class="publication-item">
       <div class="publication-title">
         Next-Generation Networking: Enhancing Intent-Based Architectures with Large Language Models and Retrieval-Augmented Generation
       </div>
-      <div class="publication-authors">
-        Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang
-      </div>
-      <div class="publication-venue">
-        IEEE BMSB 2025
-      </div>
+      <div class="publication-authors">Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang</div>
+      <div class="publication-venue">IEEE BMSB 2025</div>
     </div>
 
     <div class="publication-item">
       <div class="publication-title">
         Distributed Intelligent Endogenous Design for 6G: A DOICT Fusion Approach
       </div>
-      <div class="publication-authors">
-        Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang
-      </div>
-      <div class="publication-venue">
-        IWCMC 2025
-      </div>
+      <div class="publication-authors">Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang</div>
+      <div class="publication-venue">IWCMC 2025</div>
     </div>
 
     <div class="publication-item">
       <div class="publication-title">
         An Intent-based Network Empowered by Knowledge Graph: Enhancement of Intent Translation and Management Function for Vertical Industry
       </div>
-      <div class="publication-authors">
-        Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang, Yanxia Xing
-      </div>
-      <div class="publication-venue">
-        IEEE/CIC ICC 2023 | <a href="https://ieeexplore.ieee.org/abstract/document/10233789" target="_blank">IEEE</a>
-      </div>
+      <div class="publication-authors">Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang, Yanxia Xing</div>
+      <div class="publication-venue">IEEE/CIC ICC 2023 | <a href="https://ieeexplore.ieee.org/abstract/document/10233789" target="_blank">IEEE</a></div>
     </div>
 
     <div class="publication-item">
       <div class="publication-title">
         Trends and Challenges of Policy Verification for Intent-based Networking towards 6G
       </div>
-      <div class="publication-authors">
-        Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang, Yanxia Xing
-      </div>
-      <div class="publication-venue">
-        IEEE/CIC ICC 2022 | <a href="https://ieeexplore.ieee.org/abstract/document/9896717" target="_blank">IEEE</a>
-      </div>
+      <div class="publication-authors">Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang, Yanxia Xing</div>
+      <div class="publication-venue">IEEE/CIC ICC 2022 | <a href="https://ieeexplore.ieee.org/abstract/document/9896717" target="_blank">IEEE</a></div>
     </div>
 
     <div class="publication-item">
       <div class="publication-title">
         An Intent-based Smart Slicing Framework for Vertical Industry in B5G Networks
       </div>
-      <div class="publication-authors">
-        Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang
-      </div>
-      <div class="publication-venue">
-        IEEE/CIC ICC 2021 | <a href="https://ieeexplore.ieee.org/document/9538888" target="_blank">IEEE</a>
-      </div>
+      <div class="publication-authors">Dong Wang, <strong>Ruiran Su</strong>, Shenhu Zhang</div>
+      <div class="publication-venue">IEEE/CIC ICC 2021 | <a href="https://ieeexplore.ieee.org/document/9538888" target="_blank">IEEE</a></div>
     </div>
 
-    <h3 style="margin-top: 30px; color: #FFB0B5;">Book Chapters</h3>
+    <h3 style="margin-top:30px;color:#FFB0B5;">Book Chapters</h3>
     <div class="publication-item">
-      <div class="publication-title">
-        Intent-Driven Network: Techniques and Applications
-      </div>
-      <div class="publication-authors">
-        Contributing Author (invited)
-      </div>
-      <div class="publication-venue">
-        Springer Wireless Network Series, forthcoming 2025
-      </div>
+      <div class="publication-title">Intent-Driven Network: Techniques and Applications</div>
+      <div class="publication-authors">Contributing Author (invited)</div>
+      <div class="publication-venue">Springer Wireless Network Series</div>
     </div>
   </div>
 
-  <!-- Projects Section -->
+  <!-- PROJECTS -->
   <div class="w3-container w3-light-grey w3-padding-32" id="projects">
     <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Research Projects</h2>
 
     <div class="project-box">
-      <h3 style="color: #d4808a;">ClimateViz: Benchmark for Climate Fact-Checking</h3>
+      <h3 style="color:#d4808a;">Evaluation Interoperability for Frontier AI Red Lines <span class="badge-new">New</span></h3>
       <p class="w3-justify">
-        ClimateViz is a cutting-edge dataset developed to tackle misinformation in climate science. Sourced from 
-        reputable organizations such as NOAA, UK Met Office, and Copernicus, this dataset includes scientific 
-        graphics and visual data enriched with factual annotations. ClimateViz bridges the gap between visual 
-        and textual data, enabling researchers to evaluate and fine-tune large vision-language models (LVLMs) 
-        for enhanced fact-checking and retrieval-augmented generation (RAG).
+        As an IAPS AI Policy Fellow, I am developing a framework for evaluation interoperability 
+        between the US (NIST AI 600-1), UK (AISI Frontier AI Evals), and Chinese (TC260) 
+        dangerous-capability standards. The goal is to identify shared definitions of safety thresholds 
+        that can prevent unilateral deployment of unsafe frontier AI systems — and design zero-trust 
+        attestation architectures for where shared definitions are not yet feasible.
       </p>
-      <p><strong style="color: #FFB0B5;">Key Features:</strong></p>
-      <ul>
-        <li>Multi-source authoritative climate data visualization</li>
-        <li>Comprehensive factual annotations for fact-checking</li>
-        <li>Benchmark for vision-language model evaluation</li>
-        <li>Applications in misinformation detection and science communication</li>
-      </ul>
+      <p><strong style="color:#FFB0B5;">Methods:</strong> Structured expert interviews, standards mapping, policy-facing disagreement logs, zero-trust auditing architectures.</p>
     </div>
 
     <div class="project-box">
-      <h3 style="color: #d4808a;">Graph Neural Networks for Social Media Analysis</h3>
+      <h3 style="color:#d4808a;">CLIMATEVIZ: Benchmark for Scientific Chart Reasoning</h3>
       <p class="w3-justify">
-        Developing GNN-based approaches to understand climate discourse on social media platforms. This research 
-        integrates textual and social network data to analyze discussions, identify misinformation spreaders, 
-        and understand the dynamics of climate-related debates online.
+        CLIMATEVIZ is a large-scale benchmark (49,862 chart-claim pairs; 2,896 expert-curated charts) 
+        sourced from NOAA, UK Met Office, and Copernicus, designed to evaluate statistical reasoning 
+        and fact-checking on scientific charts. It bridges visual and textual data to benchmark 
+        vision-language models for high-stakes scientific domains.
       </p>
+      <p><strong style="color:#FFB0B5;">Key features:</strong> Multi-source authoritative climate data, expert-curated annotations, multimodal LLM evaluation, RAG applications.</p>
+      <p><a href="https://arxiv.org/abs/2506.08700" target="_blank">📄 EMNLP 2025 paper</a></p>
     </div>
 
     <div class="project-box">
-      <h3 style="color: #d4808a;">Intent-Based Networking with Knowledge Graphs</h3>
+      <h3 style="color:#d4808a;">Causal Graph Discovery for Climate Claims</h3>
       <p class="w3-justify">
-        Research on Intent-based Networks (IBNs) empowered by Knowledge Graphs for next-generation telecommunication 
-        systems. This work integrates knowledge graph technology with IBN to improve translation and management of 
-        user intents, with applications in smart grid scenarios and 6G networks.
+        Creating graph-based causal discovery frameworks using invariant causal prediction (ICP) to 
+        detect spurious correlations and validate scientific claims across distributional shifts. 
+        This methodology is directly transferable to AI evaluation claim verification across jurisdictions.
       </p>
+      <p><strong style="color:#FFB0B5;">Methods:</strong> NOTEARS, PC, FCI, GES algorithms; do-calculus; mediation analysis; counterfactual reasoning.</p>
+    </div>
+
+    <div class="project-box">
+      <h3 style="color:#d4808a;">Climate Discourse Analysis via Graph Neural Networks</h3>
+      <p class="w3-justify">
+        GNN-based approaches to understand climate discourse and misinformation on social media. 
+        Graph attention networks model 1,397 scientific entities, achieving 79% accuracy in detecting 
+        climate misinformation and demonstrating causal reasoning for information diffusion.
+      </p>
+      <p><a href="https://arxiv.org/abs/2407.07038" target="_blank">📄 ACL 2024 paper</a></p>
     </div>
   </div>
 
-  <!-- Teaching Section -->
+  <!-- TEACHING -->
   <div class="w3-container w3-padding-32" id="teaching">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Teaching</h2>
-    
-    <h3 style="color: #FFB0B5;">University of Oxford (2022 - Present)</h3>
-    <p><em style="color: #666;">Graduate Teaching Assistant, Department of Engineering Science</em></p>
-    
+
+    <h3 style="color:#FFB0B5;">University of Oxford (2022 – Present)</h3>
+    <p><em style="color:#666;">Graduate Teaching Assistant, Department of Engineering Science</em></p>
+
     <ul class="w3-ul">
-      <li><strong>Computational & Corpus Linguistics:</strong> Supervised tutorials on developing multimodal digital 
-          repositories, guiding students through practical applications of linguistic analysis</li>
-      <li><strong>Cybersecurity:</strong> Led tutorials covering state-of-the-art security challenges, emerging threats, 
-          and future directions in cybersecurity</li>
-      <li><strong>NLP for Mental Health:</strong> Taught NLP methods for analyzing mental health-related Reddit posts, 
-          including sentiment analysis and ethical considerations</li>
-      <li><strong>AI for Education:</strong> Supervised student projects developing AI-powered chatbots for stress 
-          management and behavioral intervention</li>
+      <li><strong>Computational &amp; Corpus Linguistics:</strong> Supervised tutorials on statistical analysis, graphical models, and causal reasoning in linguistic data.</li>
+      <li><strong>Cybersecurity:</strong> Led tutorials on threat analysis and vulnerability assessment using causal frameworks.</li>
+      <li><strong>NLP for Mental Health:</strong> Taught statistical methods for observational data analysis, emphasising confounding control.</li>
+      <li><strong>AI for Education:</strong> Supervised projects on intervention design and causal evaluation of AI-based tools.</li>
     </ul>
   </div>
 
-  <!-- Experience Section -->
+  <!-- EXPERIENCE -->
   <div class="w3-container w3-light-grey w3-padding-32" id="experience">
     <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Professional Experience</h2>
 
     <div class="experience-item">
-      <h3>ACL 2025 - ClimateNLP Workshop Co-Organizer</h3>
+      <h3>IAPS – AI Policy Fellow, International Strategy Track <span class="badge-new">Incoming</span></h3>
+      <p><em>Summer 2026 | London / Washington, D.C.</em></p>
+      <ul class="w3-ul">
+        <li>Developing an evaluation interoperability framework for frontier AI "red lines" between the US, UK, and China.</li>
+        <li>Mapping TC260-related security requirements to NIST AI 600-1 and AISI Frontier AI Evals.</li>
+        <li>Conducting structured expert interviews with evaluation practitioners and China standards analysts.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Climatic Change (Springer) – Editorial Reviewer</h3>
+      <p><em>2026 | Special Collection: NLP and AI as Climate Solutions</em></p>
+      <ul class="w3-ul">
+        <li>Invited by editorial team to review submissions on opportunities and challenges of NLP and AI as climate solutions.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>ACL 2025 – ClimateNLP Workshop Co-Organizer</h3>
       <p><em>2025 | Vienna, Austria</em></p>
       <ul class="w3-ul">
-        <li>Co-organized ClimateNLP workshop with Prof. Christopher Manning (Stanford), Prof. Markus Leippold (UZH) and other leading researchers</li>
-        <li>Managed peer review process and curated technical program</li>
-        <li>Facilitated interdisciplinary dialogue between NLP researchers and climate scientists</li>
+        <li>Co-organized alongside Prof. Christopher Manning (Stanford) and leading NLP scientists.</li>
+        <li>Coordinated peer review; facilitated interdisciplinary discussions on responsible AI for high-stakes applications.</li>
       </ul>
     </div>
 
     <div class="experience-item">
-      <h3>China Telecom Research Institute - AI Technology Researcher</h3>
-      <p><em>2021 - 2025 | Beijing, China</em></p>
+      <h3>China Telecom Research Institute – AI Technology Researcher</h3>
+      <p><em>2021 – 2025 | Beijing, China</em></p>
       <ul class="w3-ul">
-        <li>Developed NLP-based Intent-Based Networking solutions for 6G networks</li>
-        <li>Designed knowledge graph frameworks for vertical industry applications</li>
-        <li>Presented at Linux Foundation Networking conferences</li>
-        <li>Published multiple IEEE conference papers</li>
+        <li>Developed causal models for complex systems using structural equation modeling and knowledge graph reasoning.</li>
+        <li>Applied graphical causal inference and RAG for automated decision support; presented at Linux Foundation conferences.</li>
+        <li>Published multiple IEEE conference papers on intent-based networking and 6G systems.</li>
       </ul>
     </div>
 
     <div class="experience-item">
-      <h3>Linux Foundation - Software Engineering Research Intern</h3>
-      <p><em>2020 - 2021 | Remote</em></p>
+      <h3>Tsinghua University – Assistant Researcher, Smart City Program</h3>
+      <p><em>2020 – 2021 | Beijing, China</em></p>
       <ul class="w3-ul">
-        <li>Contributed to Open Network Automation Platform (ONAP) project</li>
-        <li>Conducted empirical studies on open-source community dynamics</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <h3>Tsinghua University - Assistant Researcher</h3>
-      <p><em>2020 - 2021 | Beijing, China</em></p>
-      <ul class="w3-ul">
-        <li>Smart City Program: Researched regional inequality through social data mining</li>
-        <li>Designed methodologies for calculating cities' Health Index</li>
+        <li>Investigated causal mechanisms of regional inequality using observational data.</li>
+        <li>Applied causal mediation analysis to identify policy-relevant pathways.</li>
       </ul>
     </div>
   </div>
 
-  <!-- Awards Section -->
+  <!-- AWARDS -->
   <div class="w3-container w3-padding-32" id="awards">
-    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Awards & Honors</h2>
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Awards &amp; Honors</h2>
 
-    <div class="award-item">
-      <strong>🏆 Jardine Scholarship</strong> (1.5% acceptance rate) - University of Oxford, 2022
-      <br><em>Fully funded DPhil scholarship for outstanding scholars</em>
+    <div class="award-item top">
+      <strong>🏆 IAPS AI Policy Fellowship</strong> – Institute for AI Policy and Strategy, 2026
+      <br><em>Top 0.4% of 8,200+ applicants. Focus: US-UK-China evaluation interoperability &amp; dangerous-capability red lines.</em>
+    </div>
+
+    <div class="award-item top">
+      <strong>🏅 Jardine Scholarship</strong> – University of Oxford, 2022–Present
+      <br><em>Premier full scholarship for exceptional academic merit and leadership potential. Acceptance rate: 1.5%.</em>
     </div>
 
     <div class="award-item">
-      <strong>🎵 Britton Instrumental Award</strong> - University of Oxford, 2023
+      <strong>🔬 Google Research Grant for Explainable AI</strong> – Google Research, 2024 &amp; 2025
+      <br><em>Two-time recipient for causal verification frameworks and statistical reasoning in high-stakes AI.</em>
     </div>
 
     <div class="award-item">
-      <strong>⭐ Distinguished Student of the Year</strong> - Peking University, 2020
+      <strong>🔬 Cohere Research Grant for Foundation Models</strong> – Cohere, 2024
+      <br><em>Awarded for research on interpretability and safety metrics of large-scale foundation models.</em>
     </div>
 
     <div class="award-item">
-      <strong>⭐ Distinguished Student of the Year</strong> - Peking University, 2019
+      <strong>⭐ Global Leadership Challenge Emerging Leader Award</strong> – St. Gallen Symposium, 2023
+      <br><em>Recognised for cross-disciplinary leadership in responsible AI integration.</em>
     </div>
 
     <div class="award-item">
-      <strong>📝 First Prize, YLYK English-to-Chinese Translation Contest</strong> - 2019
+      <strong>🌐 Great Britain-China Educational Trust Award</strong> – 2025
+      <br><em>Competitive grant supporting Sino-British academic exchange and international research collaboration.</em>
     </div>
 
     <div class="award-item">
-      <strong>💡 President's Undergraduate Scholarship</strong> - 2018
+      <strong>⭐ Merit Student Award</strong> – Peking University, 2019–2022
+      <br><em>Highest honor for students in the top 1% of the Computer Science department.</em>
     </div>
 
     <div class="award-item">
-      <strong>🎭 Oxford Lunar New Year Gala</strong> - Featured Performer, 2022
+      <strong>🌍 Outstanding Volunteer Service Award</strong> – UN Convention to Combat Desertification COP13, 2017
     </div>
   </div>
 
-  <!-- Personal Interests Section -->
+  <!-- PERSONAL -->
   <div class="w3-container w3-light-grey w3-padding-32" id="interests">
     <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Beyond Research</h2>
 
-    <h3 style="color: #FFB0B5;">🎵 Music & Performance</h3>
+    <h3 style="color:#FFB0B5;">🎵 Music &amp; Composition</h3>
     <p class="w3-justify">
-      I am a multi-instrumentalist proficient in piano, keyboards, guitar, ukulele, Irish flute, harmonica, handpan, 
-      and dizi. I compose original music that blends folk traditions with modern genres including neo-classical, indie pop, 
-      tropical house, and EDM. I actively publish my music on platforms like NetEase.
+      I am an experienced multi-instrumentalist with proficiency in piano, keyboards, guitar, ukulele, 
+      Irish flute, harmonica, handpan, and dizi. I compose original music blending folk traditions with 
+      modern genres including neo-classical, indie pop, tropical house, and EDM, and actively publish 
+      on platforms like NetEase.
     </p>
-    
-    <div style="margin-top: 15px; padding: 15px; background: linear-gradient(135deg, var(--pink2) 0%, var(--peach) 100%); border-radius: 8px; border-left: 4px solid var(--pink5);">
-      <h4 style="color: #d4808a; margin-top: 0;">🎼 Listen to My Music</h4>
-      <a href="https://drive.google.com/file/d/13dW1G8v56z60Yu0FhSfa9J3tZDjsfyhb/view?usp=sharing" target="_blank" class="btn-link" style="margin: 10px 5px;">
-        🎧 Winterbird
-      </a>
+
+    <div style="margin-top:15px;padding:15px;background:linear-gradient(135deg,var(--pink2) 0%,var(--peach) 100%);border-radius:8px;border-left:4px solid var(--pink5);">
+      <h4 style="color:#d4808a;margin-top:0;">🎼 Listen to My Music</h4>
+      <a href="https://drive.google.com/file/d/13dW1G8v56z60Yu0FhSfa9J3tZDjsfyhb/view?usp=sharing" target="_blank" class="btn-link" style="margin:10px 5px;">🎧 Winterbird</a>
     </div>
 
-    <h3 style="color: #FFB0B5;">🎨 Creative Arts</h3>
+    <h3 style="color:#FFB0B5;margin-top:25px;">🎨 Creative Arts &amp; Writing</h3>
     <p class="w3-justify">
-      I am a member of the <strong>China Writers Association</strong>, where I engage in creative writing including 
-      fiction, poetry, and environmental essays. I'm also a member of <strong>Procreate Artists</strong>, exploring 
-      digital art alongside traditional painting with acrylic and watercolor mediums.
+      I am a member of the <strong>China Writers Association</strong>, writing fiction, poetry, and 
+      environmental essays. I'm also a member of <strong>Procreate Artists</strong>, exploring digital art 
+      alongside traditional painting with acrylic and watercolor mediums — often with nature-inspired themes.
     </p>
 
-    <div class="w3-center" style="margin-top: 20px;">
-      <img style="width:60%; border-radius: 8px; box-shadow: 0 4px 15px rgba(255, 176, 181, 0.3); border: 3px solid var(--pink2);" src="images/3.jpg" alt="Artwork">
+    <div class="w3-center" style="margin-top:20px;">
+      <img style="width:60%;border-radius:8px;box-shadow:0 4px 15px rgba(255,176,181,0.3);border:3px solid var(--pink2);" src="images/3.jpg" alt="Artwork">
     </div>
   </div>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <div class="footer-section w3-center w3-padding-24">
-    <p style="font-weight: bold; font-size: 1.1em;">© 2025 Alba (Ruiran) Su | Last updated: January 2025</p>
-    <p style="font-size: 0.9em;">
-      Visitor count since June 2020: 
+    <p style="font-weight:bold;font-size:1.1em;">© 2026 Alba (Ruiran) Su | Last updated: May 2026</p>
+    <p style="font-size:0.9em;">
+      Visitor count since June 2020:
       <script type="text/javascript">
-      var sc_project=12347113; 
-      var sc_invisible=0; 
-      var sc_security="21aca5d1"; 
-      var sc_https=1; 
-      var scJsHost = "https://";
-      document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-      "statcounter.com/counter/counter.js'></"+"script>");
+        var sc_project=12347113;
+        var sc_invisible=0;
+        var sc_security="21aca5d1";
+        var sc_https=1;
+        var scJsHost = "https://";
+        document.write("<sc"+"ript type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter.js'></"+"script>");
       </script>
     </p>
-    <p style="font-size: 0.85em;">
-      Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-    </p>
+    <p style="font-size:0.85em;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </div>
 
 </div>
 
 <script>
-// Open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
 }
- 
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
