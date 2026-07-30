@@ -16,32 +16,33 @@
 
   <style>
     :root {
-      --pink1: #FFD3D6;
-      --pink2: #FFE5E7;
-      --peach: #F9DCC0;
-      --pink3: #FFC6CA;
-      --pink4: #F9E6E4;
-      --pink5: #FFB0B5;
-      --accent: #d4808a;
-      --accent-dark: #b8616c;
+      /* three roses plus one warm neutral */
+      --pink1: #C97F8A;   /* sidebar hover */
+      --pink2: #FDF1F1;   /* pale tint */
+      --peach: #FBEFE2;   /* warm neutral, used sparingly */
+      --pink3: #F0C9CD;   /* decorative lines */
+      --pink4: #FDF1F1;   /* pale tint */
+      --pink5: #E3A3AB;   /* decorative borders */
+      --accent: #A85462;
+      --accent-dark: #8B3A45;
     }
 
     .w3-sidebar a { font-family: "Roboto", sans-serif; }
     body, h1, h2, h3, h4, h5, h6, .w3-wide { font-family: "Montserrat", sans-serif; }
 
     .w3-sidebar {
-      background: linear-gradient(180deg, var(--pink5) 0%, var(--pink3) 100%) !important;
+      background: linear-gradient(180deg, #A84E5A 0%, #8B3A45 100%) !important;
     }
     .w3-sidebar a:hover {
       background-color: var(--pink1) !important;
     }
     .w3-bar.w3-black {
-      background: linear-gradient(90deg, var(--pink5) 0%, var(--pink3) 100%) !important;
+      background: linear-gradient(90deg, #A84E5A 0%, #8B3A45 100%) !important;
     }
 
     .badge-new {
       display: inline-block;
-      background: linear-gradient(135deg, #ff8c94 0%, var(--accent) 100%);
+      background: linear-gradient(135deg, #B85F6A 0%, var(--accent) 100%);
       color: white;
       font-size: 10px;
       font-weight: 700;
@@ -70,7 +71,7 @@
       margin-bottom: 15px;
       padding: 14px;
       border-left: 4px solid var(--pink5);
-      background: linear-gradient(to right, var(--pink4) 0%, #ffffff 60%);
+      background: linear-gradient(to right, #FDF1F1 0%, #ffffff 55%);
       border-radius: 4px;
       transition: transform 0.2s;
     }
@@ -78,10 +79,10 @@
       transform: translateX(5px);
       box-shadow: 0 2px 8px rgba(255, 176, 181, 0.3);
     }
-    .publication-title { font-weight: bold; color: #d4808a; margin-bottom: 5px; }
+    .publication-title { font-weight: bold; color: #A85462; margin-bottom: 5px; }
     .publication-authors { color: #555; font-size: 0.95em; margin-bottom: 3px; }
     .publication-venue { font-style: italic; color: #666; font-size: 0.9em; }
-    .publication-venue a { color: #d4808a; text-decoration: none; font-weight: bold; }
+    .publication-venue a { color: #A85462; text-decoration: none; font-weight: bold; }
     .publication-venue a:hover { color: var(--pink5); text-decoration: underline; }
     .pub-badge {
       display: inline-block;
@@ -101,19 +102,19 @@
     .award-item {
       margin-bottom: 10px;
       padding: 10px 15px;
-      background: linear-gradient(135deg, var(--pink2) 0%, var(--peach) 100%);
+      background: #FDF1F1;
       border-radius: 6px;
       border-left: 3px solid var(--pink3);
     }
     .award-item.top {
       border-left: 4px solid var(--accent);
-      background: linear-gradient(135deg, #ffd6da 0%, var(--peach) 100%);
+      background: #FBE9EA;
     }
 
     /* ── EXPERIENCE ── */
     .experience-item { margin-bottom: 20px; }
     .experience-item h3 {
-      color: #d4808a;
+      color: #A85462;
       border-bottom: 2px solid var(--pink5);
       padding-bottom: 5px;
       display: inline-block;
@@ -124,7 +125,7 @@
       display: inline-block;
       padding: 10px 20px;
       margin: 5px;
-      background: linear-gradient(135deg, var(--pink3) 0%, var(--pink5) 100%);
+      background: linear-gradient(135deg, #A84E5A 0%, #96404C 100%);
       color: white;
       text-decoration: none;
       border-radius: 25px;
@@ -135,15 +136,15 @@
     .btn-link:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(255, 176, 181, 0.4);
-      background: linear-gradient(135deg, var(--pink5) 0%, var(--pink3) 100%);
+      background: linear-gradient(135deg, #96404C 0%, #A84E5A 100%);
     }
 
-    .highlight-text { color: #d4808a; font-weight: bold; }
-    h2 { color: #d4808a !important; }
+    .highlight-text { color: #A85462; font-weight: bold; }
+    h2 { color: #A85462 !important; }
     .w3-border-bottom { border-bottom: 3px solid var(--pink5) !important; }
-    .w3-light-grey { background: linear-gradient(to bottom, #ffffff 0%, var(--pink4) 100%) !important; }
+    .w3-light-grey { background: #FDF7F7 !important; }
 
-    a { color: #d4808a; transition: color 0.3s; }
+    a { color: #A85462; transition: color 0.3s; }
     a:hover { color: var(--pink5); }
 
     .profile-img {
@@ -160,14 +161,14 @@
     .w3-ul li:hover { border-left-color: var(--pink5); }
 
     .footer-section {
-      background: linear-gradient(to right, var(--pink2) 0%, var(--peach) 50%, var(--pink2) 100%);
+      background: #FBEFE2;
       color: #555;
     }
-    .footer-section a { color: #d4808a; font-weight: bold; }
+    .footer-section a { color: #A85462; font-weight: bold; }
     .footer-section a:hover { color: var(--pink5); }
 
     h1 {
-      background: linear-gradient(135deg, var(--pink5) 0%, #d4808a 100%);
+      background: linear-gradient(135deg, #C06070 0%, #96404C 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -233,38 +234,98 @@
       padding-top: 2px;
     }
     .news-text { font-size: 0.92em; color: #444; line-height: 1.5; }
+
+    /* ── INTERACTION ── */
+
+    /* 1. smooth anchor scrolling */
+    html { scroll-behavior: smooth; }
+
+    /* 2. active section highlight in the sidebar */
+    .w3-sidebar a.nav-active {
+      background-color: var(--pink1) !important;
+      border-left: 4px solid #fff;
+    }
+
+    /* 3. click ripple on the contact buttons */
+    .btn-link { position: relative; overflow: hidden; }
+    .ripple {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.55);
+      transform: scale(0);
+      animation: ripple-out 0.55s ease-out;
+      pointer-events: none;
+    }
+    @keyframes ripple-out {
+      to { transform: scale(3.2); opacity: 0; }
+    }
+
+    /* 4. sections fade in as they enter view.
+          The class is added by JS, so content stays visible without JS. */
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.is-visible { opacity: 1; transform: none; }
+
+    /* 5. back to top */
+    #toTop {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      width: 44px;
+      height: 44px;
+      border: none;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #A84E5A 0%, #96404C 100%);
+      color: #fff;
+      font-size: 1.1em;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(212, 128, 138, 0.35);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      z-index: 4;
+    }
+    #toTop.show { opacity: 1; pointer-events: auto; transform: none; }
+    #toTop:hover { box-shadow: 0 6px 16px rgba(212, 128, 138, 0.5); }
+
+    /* respect the visitor's motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal, .reveal.is-visible { opacity: 1; transform: none; transition: none; }
+      .ripple { display: none; }
+      * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
   </style>
 </head>
 
 <body class="w3-content" style="max-width:1000px">
 
-<!-- Announcement banner: current work rather than credentials -->
-<div class="hero-banner">
-  📄 New working paper: <strong>When Benchmarks Stop Discriminating</strong> — the evidence behind frontier AI safety determinations in Western and Chinese frameworks (IAPS, 2026)
-</div>
-
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
-    <h3 style="color: white;"><b>ALBA SU</b></h3>
+    <h3 style="color:#ffffff;"><b>ALBA SU</b></h3>
   </div>
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
-    <a href="#home"         class="w3-bar-item w3-button" style="color:white;">Home</a>
-    <a href="#about"        class="w3-bar-item w3-button" style="color:white;">About</a>
-    <a href="#news"         class="w3-bar-item w3-button" style="color:white;">News</a>
-    <a href="#publications" class="w3-bar-item w3-button" style="color:white;">Publications</a>
-    <a href="#projects"     class="w3-bar-item w3-button" style="color:white;">Projects</a>
-    <a href="#teaching"     class="w3-bar-item w3-button" style="color:white;">Teaching</a>
-    <a href="#experience"   class="w3-bar-item w3-button" style="color:white;">Experience</a>
-    <a href="#awards"       class="w3-bar-item w3-button" style="color:white;">Awards</a>
-    <a href="#interests"    class="w3-bar-item w3-button" style="color:white;">Personal</a>
+    <a href="#home"         class="w3-bar-item w3-button" style="color:#ffffff;">Home</a>
+    <a href="#about"        class="w3-bar-item w3-button" style="color:#ffffff;">About</a>
+    <a href="#news"         class="w3-bar-item w3-button" style="color:#ffffff;">News</a>
+    <a href="#publications" class="w3-bar-item w3-button" style="color:#ffffff;">Publications</a>
+    <a href="#projects"     class="w3-bar-item w3-button" style="color:#ffffff;">Projects</a>
+    <a href="#teaching"     class="w3-bar-item w3-button" style="color:#ffffff;">Teaching</a>
+    <a href="#experience"   class="w3-bar-item w3-button" style="color:#ffffff;">Experience</a>
+    <a href="#awards"       class="w3-bar-item w3-button" style="color:#ffffff;">Awards</a>
+    <a href="#interests"    class="w3-bar-item w3-button" style="color:#ffffff;">Personal</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24" style="color:white;">ALBA SU</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()" style="color:white;"><b>≡</b></a>
+  <div class="w3-bar-item w3-padding-24" style="color:#ffffff;">ALBA SU</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()" style="color:#ffffff;"><b>≡</b></a>
 </header>
 
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -278,7 +339,7 @@
   <div class="w3-container w3-center w3-padding-32" id="home">
     <img class="profile-img" style="width:80%;max-width:320px;border-radius:50%;" alt="profile photo" src="images/beauty_1653637214159.JPG">
     <h1 style="font-size:2.5em;">Alba (Ruiran) Su</h1>
-    <p style="color:#d4808a;font-size:1.15em;font-weight:bold;">DPhil Researcher &amp; AI Policy Fellow</p>
+    <p style="color:#A85462;font-size:1.15em;font-weight:bold;">DPhil Researcher &amp; AI Policy Fellow</p>
     <p style="color:#666;font-size:1em;">University of Oxford · Institute for AI Policy and Strategy</p>
 
     <div class="w3-center" style="margin-top:25px;">
@@ -288,25 +349,6 @@
       <a href="https://ruiransu.github.io" class="btn-link" target="_blank">🌐 GitHub</a>
     </div>
 
-    <!-- stat cards -->
-    <div class="stat-row" style="justify-content:center;margin-top:30px;">
-      <div class="stat-card">
-        <span class="stat-number">10+</span>
-        <div class="stat-label">Publications<br>(conf. + journal)</div>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">19</span>
-        <div class="stat-label">Safety thresholds<br>examined across 4 frameworks</div>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">49,862</span>
-        <div class="stat-label">CLIMATEVIZ<br>chart-claim pairs</div>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">3</span>
-        <div class="stat-label">Competitive<br>research grants</div>
-      </div>
-    </div>
   </div>
 
   <!-- ABOUT -->
@@ -319,7 +361,7 @@
       My work bridges <strong>technical AI research</strong> and <strong>international AI governance</strong>.
     </p>
 
-    <h3 style="color:#FFB0B5;">Current research: what safety determinations rest on</h3>
+    <h3 style="color:#A85462;">Current research: what safety determinations rest on</h3>
     <p class="w3-justify" style="font-size:1.05em;line-height:1.75;">
       Frontier safety frameworks govern model releases by defining capability thresholds, so every release
       decision depends on the claim that a model has not crossed one. My IAPS working paper asks what that
@@ -335,14 +377,14 @@
       languages, drawing on primary Chinese sources rather than second-hand summaries.
     </p>
 
-    <h3 style="color:#FFB0B5;">Technical research</h3>
+    <h3 style="color:#A85462;">Technical research</h3>
     <p class="w3-justify" style="font-size:1.05em;line-height:1.75;">
       I build <strong>causal and multimodal AI frameworks</strong> integrating satellite imagery, scientific
       charts, and text for environmental accountability, including the <strong>CLIMATEVIZ benchmark</strong>
       for statistical reasoning and fact verification in high-stakes scientific domains.
     </p>
 
-    <h3 style="color:#FFB0B5;">Research Interests</h3>
+    <h3 style="color:#A85462;">Research Interests</h3>
     <ul class="w3-ul">
       <li>🛡️ Frontier AI evaluation and dangerous-capability assessment</li>
       <li>🌐 International AI governance and cross-jurisdictional evidence transfer</li>
@@ -403,7 +445,7 @@
   <div class="w3-container w3-padding-32" id="publications">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Publications</h2>
 
-    <h3 style="color:#FFB0B5;">Working Papers</h3>
+    <h3 style="color:#A85462;">Working Papers</h3>
 
     <div class="publication-item">
       <div class="publication-title">
@@ -414,7 +456,7 @@
       <div class="publication-venue">IAPS working paper, 2026</div>
     </div>
 
-    <h3 style="margin-top:30px;color:#FFB0B5;">Conference &amp; Journal Papers</h3>
+    <h3 style="margin-top:30px;color:#A85462;">Conference &amp; Journal Papers</h3>
 
     <div class="publication-item">
       <div class="publication-title">
@@ -488,7 +530,7 @@
       <div class="publication-venue">IEEE/CIC ICC 2021 | <a href="https://ieeexplore.ieee.org/document/9538888" target="_blank">IEEE</a></div>
     </div>
 
-    <h3 style="margin-top:30px;color:#FFB0B5;">Book Chapters</h3>
+    <h3 style="margin-top:30px;color:#A85462;">Book Chapters</h3>
     <div class="publication-item">
       <div class="publication-title">Intent-Driven Network: Techniques and Applications</div>
       <div class="publication-authors">Contributing Author (invited)</div>
@@ -501,7 +543,7 @@
     <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Research Projects</h2>
 
     <div class="project-box">
-      <h3 style="color:#d4808a;">The Evidence Behind Frontier AI Safety Determinations <span class="badge-new">Current</span></h3>
+      <h3 style="color:#A85462;">The Evidence Behind Frontier AI Safety Determinations <span class="badge-new">Current</span></h3>
       <p class="w3-justify">
         Safety frameworks turn evaluations into release decisions, and regulation is beginning to turn those
         determinations into legal facts. This project classifies every capability threshold across four
@@ -511,11 +553,11 @@
         enforcement, pre-deployment testing without statutory power, state-institutional benchmarking, and
         published multilingual methodology.
       </p>
-      <p><strong style="color:#FFB0B5;">Methods:</strong> primary-source document analysis, a published coding protocol for evidence classification, cross-framework comparison, expert interviews.</p>
+      <p><strong style="color:#A85462;">Methods:</strong> primary-source document analysis, a published coding protocol for evidence classification, cross-framework comparison, expert interviews.</p>
     </div>
 
     <div class="project-box">
-      <h3 style="color:#d4808a;">CLIMATEVIZ: Benchmark for Scientific Chart Reasoning</h3>
+      <h3 style="color:#A85462;">CLIMATEVIZ: Benchmark for Scientific Chart Reasoning</h3>
       <p class="w3-justify">
         A large-scale benchmark of 49,862 chart-claim pairs and 2,896 expert-curated charts, sourced from
         NOAA, the UK Met Office, and Copernicus, designed to evaluate statistical reasoning and fact-checking
@@ -526,17 +568,17 @@
     </div>
 
     <div class="project-box">
-      <h3 style="color:#d4808a;">Causal Graph Discovery for Scientific Claims</h3>
+      <h3 style="color:#A85462;">Causal Graph Discovery for Scientific Claims</h3>
       <p class="w3-justify">
         Graph-based causal discovery using invariant causal prediction to detect spurious correlations and
         validate scientific claims across distributional shifts. The same machinery transfers to verifying
         evaluation claims across jurisdictions.
       </p>
-      <p><strong style="color:#FFB0B5;">Methods:</strong> NOTEARS, PC, FCI, GES; do-calculus; mediation analysis; counterfactual reasoning.</p>
+      <p><strong style="color:#A85462;">Methods:</strong> NOTEARS, PC, FCI, GES; do-calculus; mediation analysis; counterfactual reasoning.</p>
     </div>
 
     <div class="project-box">
-      <h3 style="color:#d4808a;">Climate Discourse Analysis via Graph Neural Networks</h3>
+      <h3 style="color:#A85462;">Climate Discourse Analysis via Graph Neural Networks</h3>
       <p class="w3-justify">
         Graph attention networks modelling 1,397 scientific entities to study climate discourse and
         misinformation on social media, reaching 79% accuracy in detecting climate misinformation.
@@ -549,7 +591,7 @@
   <div class="w3-container w3-padding-32" id="teaching">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Teaching</h2>
 
-    <h3 style="color:#FFB0B5;">University of Oxford (2022 – Present)</h3>
+    <h3 style="color:#A85462;">University of Oxford (2022 – Present)</h3>
     <p><em style="color:#666;">Graduate Teaching Assistant, Department of Engineering Science</em></p>
 
     <ul class="w3-ul">
@@ -661,19 +703,19 @@
   <div class="w3-container w3-light-grey w3-padding-32" id="interests">
     <h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16">Beyond Research</h2>
 
-    <h3 style="color:#FFB0B5;">🎵 Music &amp; Composition</h3>
+    <h3 style="color:#A85462;">🎵 Music &amp; Composition</h3>
     <p class="w3-justify">
       I play piano, keyboards, guitar, ukulele, Irish flute, harmonica, handpan, and dizi. I compose original
       music blending folk traditions with neo-classical, indie pop, tropical house, and EDM, and publish on
       platforms including NetEase.
     </p>
 
-    <div style="margin-top:15px;padding:15px;background:linear-gradient(135deg,var(--pink2) 0%,var(--peach) 100%);border-radius:8px;border-left:4px solid var(--pink5);">
-      <h4 style="color:#d4808a;margin-top:0;">🎼 Listen</h4>
+    <div style="margin-top:15px;padding:15px;background:#FDF1F1;border-radius:8px;border-left:4px solid var(--pink5);">
+      <h4 style="color:#A85462;margin-top:0;">🎼 Listen</h4>
       <a href="https://drive.google.com/file/d/13dW1G8v56z60Yu0FhSfa9J3tZDjsfyhb/view?usp=sharing" target="_blank" class="btn-link" style="margin:10px 5px;">🎧 Winterbird</a>
     </div>
 
-    <h3 style="color:#FFB0B5;margin-top:25px;">🎨 Creative Arts &amp; Writing</h3>
+    <h3 style="color:#A85462;margin-top:25px;">🎨 Creative Arts &amp; Writing</h3>
     <p class="w3-justify">
       I am a member of the <strong>China Writers Association</strong>, writing fiction, poetry, and
       environmental essays, and a member of <strong>Procreate Artists</strong>, working in digital art
@@ -704,6 +746,8 @@
 
 </div>
 
+<button id="toTop" aria-label="Back to top" title="Back to top">&#8593;</button>
+
 <script>
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
@@ -713,6 +757,85 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
+
+(function () {
+  var reduceMotion = window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ── sidebar link highlights the section you are reading ── */
+  var navLinks = Array.prototype.slice.call(
+    document.querySelectorAll('.w3-sidebar a[href^="#"]')
+  );
+  var sections = navLinks
+    .map(function (a) { return document.querySelector(a.getAttribute("href")); })
+    .filter(Boolean);
+
+  function setActive(id) {
+    navLinks.forEach(function (a) {
+      a.classList.toggle("nav-active", a.getAttribute("href") === "#" + id);
+    });
+  }
+
+  if ("IntersectionObserver" in window && sections.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) setActive(e.target.id);
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    sections.forEach(function (s) { spy.observe(s); });
+  }
+
+  /* ── close the mobile sidebar after tapping a link ── */
+  navLinks.forEach(function (a) {
+    a.addEventListener("click", function () {
+      if (window.innerWidth < 993) w3_close();
+    });
+  });
+
+  /* ── ripple on the contact buttons ── */
+  if (!reduceMotion) {
+    document.querySelectorAll(".btn-link").forEach(function (btn) {
+      btn.addEventListener("click", function (ev) {
+        var box = btn.getBoundingClientRect();
+        var size = Math.max(box.width, box.height);
+        var span = document.createElement("span");
+        span.className = "ripple";
+        span.style.width = span.style.height = size + "px";
+        span.style.left = (ev.clientX - box.left - size / 2) + "px";
+        span.style.top = (ev.clientY - box.top - size / 2) + "px";
+        btn.appendChild(span);
+        setTimeout(function () { span.remove(); }, 600);
+      });
+    });
+  }
+
+  /* ── fade sections in on first view.
+        The class is added here, so content is visible if JS never runs. ── */
+  if (!reduceMotion && "IntersectionObserver" in window) {
+    var blocks = document.querySelectorAll("#about, #news, #publications, #projects, #teaching, #experience, #awards, #interests");
+    blocks.forEach(function (b) { b.classList.add("reveal"); });
+    var shower = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add("is-visible");
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    blocks.forEach(function (b) { shower.observe(b); });
+  }
+
+  /* ── back to top ── */
+  var toTop = document.getElementById("toTop");
+  if (toTop) {
+    window.addEventListener("scroll", function () {
+      toTop.classList.toggle("show", window.scrollY > 500);
+    }, { passive: true });
+    toTop.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+  }
+})();
 </script>
 
 </body>
